@@ -32,7 +32,7 @@ let animateHTML = function() {
   let _checkPosition = function() {
     for (var i = 0; i < elem.length; i++) {
       var posFromTop = elem[i].getBoundingClientRect().top;
-      if (posFromTop - windowHeight <= -750) {
+      if (posFromTop - windowHeight <= -500) {
         elem[i].className = elem[i].className.replace(
           "para-hidden",
           "para-fade-in"

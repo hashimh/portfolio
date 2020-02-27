@@ -106,7 +106,7 @@ a.middle-animation:hover:before {
   grid-area: image-1;
 }
 .home-1 {
-  height: 97vh;
+  height: 100vh;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   grid-template-areas: "hello-1 image-1";
@@ -152,7 +152,7 @@ a.middle-animation:hover:before {
   line-height: 1.5;
 }
 .para-fade-in {
-  animation: fade-in 2s;
+  animation: fade-in 1.5s;
 }
 
 .para-hidden {
@@ -167,4 +167,47 @@ a.middle-animation:hover:before {
   to {
     opacity: 1;
   }
+}
+
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* home 3 div css */
+.home-3 {
+  height: 100vh;
+}
+
+#cheat-day-div {
+  grid-area: cheat-day;
+}
+#tab-app-div {
+  grid-area: tab-app;
+}
+#react-div {
+  grid-area: react;
+}
+.work-link {
+  grid-area: link;
+}
+.work-description {
+  grid-area: desc;
+}
+
+.home-3-container {
+  display: grid;
+  padding: 10vh;
+  padding-top: 15%;
+
+  grid-template-areas:
+    "cheat-day"
+    "tab-app"
+    "react";
+}
+
+.work-div {
+  display: grid;
+  padding: 5vh;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "link desc";
+  padding-left: 10vh;
+  font-size: 4vh;
 }
