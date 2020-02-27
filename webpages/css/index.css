@@ -16,6 +16,22 @@ body {
   position: fixed;
   width: 100%;
   z-index: 10;
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  transform: translate(0, -20px);
+}
+@keyframes slide {
+  0% {
+    transform: translate(0, -60px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
 }
 .navbar > li {
   display: inline;
@@ -59,12 +75,13 @@ a.middle-animation:hover:before {
   font-size: 2.4vw;
 }
 .navbar-colour {
-  background-color: #957dad;
-  transition: background-color 0.25s ease-in;
+  background-color: #caaabeef;
+  border-bottom: 1px solid black;
+  transition: ease-in-out 0.4s;
 }
 .navbar-clear {
   background-color: transparent;
-  transition: background-color 0.25s ease-in;
+  transition: ease-in-out 0.4s;
 }
 
 /* ------------------------------------------------------------------------------ */
@@ -90,6 +107,14 @@ a.middle-animation:hover:before {
 .home-1 p {
   font-size: 4vw;
   line-height: 1.5;
+  opacity: 0;
+  animation-name: slide;
+  animation-delay: 1.5s;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform: translate(0, -20px);
 }
 
 /* ------------------------------------------------------------------------------ */
