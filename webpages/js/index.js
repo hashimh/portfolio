@@ -1,3 +1,7 @@
+window.onbeforeunload = function() {
+  window.scrollTo(0, 0);
+};
+
 // navigation bar scroll - add background colour
 let navbar = document.getElementById("navbar");
 window.onscroll = function() {
@@ -28,7 +32,7 @@ let animateHTML = function() {
   let _checkPosition = function() {
     for (var i = 0; i < elem.length; i++) {
       var posFromTop = elem[i].getBoundingClientRect().top;
-      if (posFromTop - windowHeight <= 0) {
+      if (posFromTop - windowHeight <= -750) {
         elem[i].className = elem[i].className.replace(
           "para-hidden",
           "para-fade-in"

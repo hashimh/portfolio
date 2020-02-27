@@ -3,6 +3,10 @@ body {
   font-family: Raleway;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------ */
 /* navigation bar */
@@ -140,7 +144,7 @@ a.middle-animation:hover:before {
   grid-template-areas: "image-2 hello-2";
 }
 .home-2 div {
-  padding-top: 25%;
+  padding-top: 20%;
   padding-right: 5vw;
 }
 .home-2 p {
@@ -148,7 +152,7 @@ a.middle-animation:hover:before {
   line-height: 1.5;
 }
 .para-fade-in {
-  animation: fade-in 3s;
+  animation: fade-in 2s;
 }
 
 .para-hidden {
@@ -158,7 +162,7 @@ a.middle-animation:hover:before {
 @keyframes fade-in {
   from {
     opacity: 0;
-    transform: scale(0.7, 0.7);
+    transform: scale(0.9, 0.9);
   }
   to {
     opacity: 1;
