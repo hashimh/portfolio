@@ -76,12 +76,19 @@ a.middle-animation:hover:before {
 }
 .navbar-colour {
   background-color: #caaabeef;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
   transition: ease-in-out 0.4s;
 }
 .navbar-clear {
   background-color: transparent;
   transition: ease-in-out 0.4s;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* general home div css */
+.home p:hover {
+  cursor: default;
 }
 
 /* ------------------------------------------------------------------------------ */
@@ -133,10 +140,27 @@ a.middle-animation:hover:before {
   grid-template-areas: "image-2 hello-2";
 }
 .home-2 div {
-  padding-top: 20%;
+  padding-top: 25%;
   padding-right: 5vw;
 }
 .home-2 p {
   font-size: 4vw;
   line-height: 1.5;
+}
+.para-fade-in {
+  animation: fade-in 3s;
+}
+
+.para-hidden {
+  opacity: 0;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.7, 0.7);
+  }
+  to {
+    opacity: 1;
+  }
 }

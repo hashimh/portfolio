@@ -13,3 +13,32 @@ window.onscroll = function() {
     navbar.classList.remove("navbar-colour");
   }
 };
+
+let animateHTML = function() {
+  let elem, windowHeight;
+  let init = function() {
+    elem = document.getElementsByClassName("home-2-hello");
+    windowHeight = window.innerHeight;
+    _addEventHandlers();
+  };
+
+  let _addEventHandlers = function() {
+    window.addEventListener("scroll", _checkPosition);
+  };
+  let _checkPosition = function() {
+    for (var i = 0; i < elem.length; i++) {
+      var posFromTop = elem[i].getBoundingClientRect().top;
+      if (posFromTop - windowHeight <= 0) {
+        elem[i].className = elem[i].className.replace(
+          "para-hidden",
+          "para-fade-in"
+        );
+      }
+    }
+  };
+  return {
+    init: init
+  };
+};
+
+animateHTML().init();
