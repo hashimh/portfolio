@@ -18,6 +18,7 @@ window.onscroll = function() {
   }
 };
 
+// function to animate the 2nd paragraph of home.html, when it comes into view
 let animateHTML = function() {
   let elem, windowHeight;
   let init = function() {
