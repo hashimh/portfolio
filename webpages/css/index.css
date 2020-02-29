@@ -172,9 +172,6 @@ a.middle-animation:hover:before {
 /* ------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------ */
 /* home 3 div css */
-.home-3 {
-  height: 100vh;
-}
 
 #cheat-day-div {
   grid-area: cheat-day;
@@ -208,6 +205,19 @@ a.middle-animation:hover:before {
   padding: 5vh;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "link desc";
-  padding-left: 10vh;
+  padding-left: 5vh;
   font-size: 4vh;
+  height: 100vh;
+}
+
+.work-description p {
+  margin: 0;
+  padding-left: 5vw;
+}
+
+.work-img {
+  border-radius: 1vh;
+  height: 20vw;
+  width: 40vw;
+  box-shadow: 5px 5px 10px black;
 }
