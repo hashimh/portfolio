@@ -159,7 +159,7 @@ a.middle-animation:hover:before {
   padding-right: 5vw;
 }
 .home-2 p {
-  font-size: 4vw;
+  font-size: 3vw;
   line-height: 1.5;
 }
 .para-fade-in {
@@ -216,7 +216,7 @@ a.middle-animation:hover:before {
   padding: 5vh;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "link desc";
-  font-size: 4vh;
+  font-size: 3vh;
   height: 100vh;
 }
 
