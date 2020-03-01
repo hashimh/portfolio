@@ -4,6 +4,16 @@ body {
   /* background-image: linear-gradient(#e4cae7, #e093e9); */
 }
 
+body::-webkit-scrollbar {
+  width: 0.5vw;
+}
+body::-webkit-scrollbar-track {
+  background-color: #d291bc;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #957dad;
+}
+
 html {
   scroll-behavior: smooth;
 }
