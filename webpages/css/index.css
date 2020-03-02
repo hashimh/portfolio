@@ -294,3 +294,18 @@ a.middle-animation:hover:before {
 /* ------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------ */
 /* arrow css code */
+/* .arrow {
+  text-align: center;
+  margin: 8% 0;
+  width: auto;
+}
+.arrow-a {
+  color: black;
+  text-decoration: none;
+  padding: 1vw;
+}
+
+.arrow-a:hover {
+  border: 2px solid black;
+  border-radius: 5vw;
+} */
