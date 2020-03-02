@@ -182,7 +182,7 @@ a.middle-animation:hover:before {
 
 /* ------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------ */
-/* home 3 div css */
+/* home 3 div css - my work */
 
 #cheat-day-div {
   grid-area: cheat-day;
@@ -212,17 +212,21 @@ a.middle-animation:hover:before {
 }
 
 .work-div {
-  display: grid;
   padding: 5vh;
-  grid-template-columns: 1fr 2fr;
-  grid-template-areas: "link desc";
+
   font-size: 3vh;
   height: 100vh;
 }
 
+.work-div-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "link desc";
+}
+
 .work-description p {
   margin: 0;
-  padding-left: 5vw;
+  margin-left: 5vw;
   /* background-color: #c998b6ef; */
   background-clip: content-box;
 }
@@ -245,7 +249,7 @@ a.middle-animation:hover:before {
   float: left;
   margin-right: 2vh;
   margin-bottom: 2vh;
-  padding: 1vw;
+  padding: 0.75vw;
   font-size: 2.5vh;
   border: 2px solid plum;
   background-color: plum;
@@ -260,5 +264,33 @@ a.middle-animation:hover:before {
 }
 #tab-app-div p {
   padding-left: 0;
-  padding-right: 5vh;
+  margin-left: 0;
+  margin-right: 5vw;
 }
+
+.link-source {
+  float: right;
+}
+.link-source a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  border-radius: 1vw;
+  padding: 0.5vw;
+  transition: background-color 0.5s ease-in-out;
+}
+.link-source a:hover {
+  background-color: plum;
+  border-radius: 1vw;
+  background-clip: border-box;
+}
+
+.desc-header {
+  padding-bottom: 2vh;
+  border-bottom: 2px solid black;
+  font-style: italic;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* arrow css code */
