@@ -23,7 +23,7 @@
     <header>
       <ul id="navbar" class="navbar">
         <li class="navheader">
-          <a class="middle-animation" href="#home">hashim hussain</a>
+          <a class="middle-animation" href="#">hashim hussain</a>
         </li>
         <li><a class="middle-animation" href="#">about me</a></li>
         <li><a class="middle-animation" href="#work-div">my work</a></li>
@@ -33,29 +33,54 @@
     <main>
       <div class="home">
         <div class="home-div home-1">
-          <div class="home-1-hello ">
-            <p>
-              hi, i'm hashim, a graduate web designer / developer from high
-              wycombe. this is my portfolio.
-            </p>
+          <div class="home-1-grid">
+            <div class="home-1-hello ">
+              <p>
+                hi, i'm hashim, a graduate web designer / developer from high
+                wycombe. something else.
+              </p>
+            </div>
+            <div class="home-1-image">
+              <p></p>
+            </div>
           </div>
-          <div class="home-1-image">
-            <p></p>
+          <!-- ADD DOWN ARROW HERE -->
+          <div class="arrow" style="padding-right: 8vw;">
+            <a
+              class="fa fa-arrow-down fa-2x arrow-a"
+              id="home-1-arrow"
+              onclick="scrollDown('home-2-div')"
+            ></a>
           </div>
         </div>
 
-        <div class="home-div home-2">
-          <div class="home-2-image">
-            <p></p>
+        <div class="home-div home-2" id="home-2-div">
+          <div class="home-2-grid">
+            <div class="home-2-image">
+              <p></p>
+            </div>
+            <div class="home-2-hello para-hidden">
+              <p>
+                my passion is creating
+                <span class="hover-text"><b> simple</b></span>
+                yet
+                <span class="hover-text"><b> intuitive </b></span>websites from
+                scratch; why not check them out below.
+              </p>
+            </div>
           </div>
-          <div class="home-2-hello para-hidden">
-            <p>
-              my passion is creating
-              <span class="hover-text"><b> simple</b></span>
-              yet
-              <span class="hover-text"><b> intuitive </b></span>websites from
-              scratch; why not check them out below.
-            </p>
+          <!-- ADD DOWN ARROW HERE -->
+          <div class="arrow" style="padding-right: 8vw;">
+            <a
+              class="fa fa-arrow-up fa-2x arrow-a"
+              id="home-2-arrow"
+              href="#"
+            ></a>
+            <a
+              class="fa fa-arrow-down fa-2x arrow-a"
+              id="home-2-arrow"
+              onclick="scrollDown('work-div')"
+            ></a>
           </div>
         </div>
 
@@ -106,13 +131,20 @@
                 </div>
               </div>
               <!-- ADD DOWN ARROW HERE -->
-              <!-- <div class="arrow bounce">
-                <a class="fa fa-arrow-down fa-2x arrow-a"></a>
-              </div> -->
+              <div class="arrow bounce">
+                <a
+                  class="fa fa-arrow-up fa-2x arrow-a"
+                  onclick="scrollDown('home-2-div')"
+                ></a>
+                <a
+                  class="fa fa-arrow-down fa-2x arrow-a"
+                  href="#tab-app-div"
+                ></a>
+              </div>
             </div>
 
             <div class="work-div">
-              <div class="work-div-grid" id="tab-app-div">
+              <div class="work-div-grid anchor" id="tab-app-div">
                 <div class="work-link">
                   <a href="https://tablature-app.herokuapp.com" target="_blank">
                     <img
@@ -154,6 +186,17 @@
                     future projects.
                   </p>
                 </div>
+              </div>
+              <!-- ADD DOWN ARROW HERE -->
+              <div class="arrow bounce">
+                <a
+                  class="fa fa-arrow-up fa-2x arrow-a"
+                  onclick="scrollDown('work-div')"
+                ></a>
+                <a
+                  class="fa fa-arrow-down fa-2x arrow-a"
+                  onclick="scrollDown('react-div')"
+                ></a>
               </div>
             </div>
 

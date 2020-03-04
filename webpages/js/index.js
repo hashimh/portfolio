@@ -47,3 +47,9 @@ let animateHTML = function() {
 };
 
 animateHTML().init();
+
+// Function to handle scroll down events
+function scrollDown(id) {
+  let div = document.getElementById(id);
+  div.scrollIntoView({ behavior: "smooth", block: "start" });
+}
