@@ -1,3 +1,24 @@
+// FUNCTIONS TO CHECK IF AN ELEMENT IS IN VIEW
+function checkVisible(el) {
+  const scroll = window.scrollY || window.pageYOffset;
+  const boundsTop = el.getBoundingClientRect().top + scroll;
+
+  const viewport = {
+    top: scroll + 100,
+    bottom: scroll + window.innerHeight
+  };
+
+  const bounds = {
+    top: boundsTop,
+    bottom: boundsTop + el.clientHeight
+  };
+
+  return (
+    (bounds.bottom >= viewport.top && bounds.bottom <= viewport.bottom) ||
+    (bounds.top <= viewport.bottom && bounds.top >= viewport.top)
+  );
+}
+
 window.onbeforeunload = function() {
   window.scrollTo(0, 0);
 };
@@ -15,6 +36,16 @@ window.onscroll = function() {
   } else {
     navbar.classList.add("navbar-clear");
     navbar.classList.remove("navbar-colour");
+  }
+
+  let home = document.getElementById("home-div-id");
+  let work = document.getElementById("work-div");
+  if (checkVisible(home) == true) {
+    console.log("home");
+  } else if (this.checkVisible(work) == true) {
+    console.log("work");
+  } else {
+    console.log("fuck");
   }
 };
 

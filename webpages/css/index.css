@@ -260,6 +260,10 @@ a.middle-animation:hover:before {
   border-radius: 1vh;
   font-weight: bold;
 }
+#react-div {
+  padding-top: 40vh;
+  margin-top: -40vh;
+}
 
 /* code to swap position for tab app work */
 #tab-app-div {
