@@ -39,9 +39,13 @@ window.onscroll = function() {
   }
 
   let home = document.getElementById("home-div-id");
+  let home2 = document.getElementById("home-2-div");
   let work = document.getElementById("work-div");
   if (checkVisible(home) == true) {
     console.log("home");
+  } else if (checkVisible(home2) == true) {
+    console.log("home");
+    6;
   } else if (this.checkVisible(work) == true) {
     console.log("work");
   } else {
