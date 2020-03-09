@@ -240,14 +240,28 @@ a.middle-animation:hover:before {
   height: 20vw;
   width: 40vw;
   box-shadow: 5px 5px 10px black;
-  transition: transform 0.5s;
+  transition: all 0.5s ease;
+  filter: grayscale(100%);
 }
 .work-img:hover {
-  transform: scale(1.05);
+  filter: grayscale(0%);
 }
+
+.react-img {
+  width: 17.5vw;
+  float: left;
+}
+#left-img {
+  margin-right: 3vw;
+}
+.img-row {
+  display: flex;
+}
+
 .lang-tags {
   list-style-type: none;
   padding-left: 0;
+  cursor: default;
 }
 .lang-tags li {
   float: left;
