@@ -19,10 +19,6 @@ function checkVisible(el) {
   );
 }
 
-window.onbeforeunload = function() {
-  window.scrollTo(0, 0);
-};
-
 // navigation bar scroll - add background colour
 let navbar = document.getElementById("navbar");
 window.onscroll = function() {

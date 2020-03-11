@@ -52,7 +52,7 @@ html {
   display: inline;
 }
 .navbar li a {
-  margin: 2vw 2vw;
+  margin: 1.5vw 1.5vw;
   padding: 1vw 1vw;
   font-size: 2.4vw;
   float: right;
@@ -218,7 +218,7 @@ a.middle-animation:hover:before {
 
 .work-div {
   padding: 5vh;
-  font-size: 3vh;
+  font-size: 1.5vw;
   height: 100vh;
 }
 
@@ -270,7 +270,7 @@ a.middle-animation:hover:before {
   margin-right: 2vh;
   margin-bottom: 2vh;
   padding: 0.75vw;
-  font-size: 2.5vh;
+  font-size: 1.25vw;
   border: 2px solid plum;
   background-color: plum;
   border-radius: 1vh;
@@ -354,9 +354,9 @@ a.middle-animation:hover:before {
   box-shadow: 5px 5px 10px black;
 }
 .about-1 {
-  font-size: 2vw;
+  font-size: 1.5vw;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   grid-template-areas: "about-text about-img";
 }
 .about-2-list {
@@ -390,10 +390,12 @@ a.middle-animation:hover:before {
   flex-wrap: wrap;
   list-style-type: none;
   padding-left: 0;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .about-2-gallery li {
-  height: 30vh;
+  height: 25vh;
   flex-grow: 1;
   padding: 0.5vw;
 }
@@ -413,6 +415,52 @@ a.middle-animation:hover:before {
   opacity: 1;
 }
 
+/* about 3 / contact */
+#about-3-title {
+  font-size: 4vw;
+  margin-bottom: 1vw;
+}
+.about-3 {
+  height: 70vh;
+}
+.about-3-info {
+  grid-area: contact;
+  font-size: 2vw;
+}
+.about-3-email {
+  grid-area: email;
+}
+
+.about-3-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "contact email";
+}
+.about-3-1-links {
+  list-style-type: none;
+  line-height: 4vw;
+}
+.about-3-1-links .fa {
+  padding-right: 3vw;
+}
+.about-3-1-socials {
+  text-align: center;
+}
+.about-3-1-socials a {
+  text-decoration: none;
+  color: black;
+  margin: 0vw 2vw 0vw 2vw;
+  padding: 1.5vw;
+  border: 2px solid black;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 3.5vw;
+  transition: background-color 0.5s ease;
+}
+
+.about-3-1-socials a:hover {
+  background-color: plum;
+}
 /* ------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------ */
 /* arrow css code */
@@ -420,7 +468,7 @@ a.middle-animation:hover:before {
   text-align: center;
   width: auto;
   float: right;
-  font-size: 2vh;
+  font-size: 1vw;
 }
 .arrow-a {
   color: black;
