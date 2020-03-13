@@ -1,5 +1,5 @@
 body {
-  background-color: #e4cae7;
+  background-color: #fff4c7;
   font-family: Raleway;
   /* background-image: linear-gradient(#e4cae7, #e093e9); */
 }
@@ -8,10 +8,10 @@ body::-webkit-scrollbar {
   width: 0.75vw;
 }
 body::-webkit-scrollbar-track {
-  background-color: #d291bc;
+  background-color: #ffaa6f;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #957dad;
+  background-color: #ffe1a1;
 }
 
 html {
@@ -90,7 +90,7 @@ a.middle-animation:hover:before {
   font-size: 2.4vw;
 }
 .navbar-colour {
-  background-color: #caaabeef;
+  background-color: #ffe1a1ef;
   border-bottom: 2px solid black;
   transition: ease-in-out 0.4s;
 }
@@ -271,8 +271,8 @@ a.middle-animation:hover:before {
   margin-bottom: 2vh;
   padding: 0.75vw;
   font-size: 1.25vw;
-  border: 2px solid plum;
-  background-color: plum;
+  border: 2px solid #ffaa6f;
+  background-color: #ffaa6f;
   border-radius: 1vh;
   font-weight: bold;
 }
@@ -311,7 +311,7 @@ a.middle-animation:hover:before {
   transition: background-color 0.5s ease-in-out;
 }
 .link-source a:hover {
-  background-color: plum;
+  background-color: #d291bc;
   border-radius: 1vw;
   background-clip: border-box;
 }
@@ -433,7 +433,7 @@ a.middle-animation:hover:before {
 
 .about-3-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   grid-template-areas: "contact email";
 }
 .about-3-1-links {
@@ -459,8 +459,120 @@ a.middle-animation:hover:before {
 }
 
 .about-3-1-socials a:hover {
-  background-color: plum;
+  background-color: #ed8a53;
 }
+
+a.fa {
+  position: relative;
+}
+a.fa span {
+  display: none;
+  color: white;
+}
+a.fa:hover span {
+  display: block;
+  position: fixed;
+  overflow: hidden;
+  font-size: 1.5vw;
+  background-color: black;
+  border-radius: 1vw;
+  padding: 0 1vw 0 1vw;
+  z-index: 10;
+}
+/* modal code */
+.modalBox2 {
+  grid-area: name;
+}
+.modalBox3 {
+  grid-area: email;
+}
+
+.modalBox5 {
+  grid-area: message;
+}
+.modalBox6 {
+  grid-area: send;
+}
+
+.modalContent {
+  height: 28.5vw;
+  width: 40vw;
+  display: grid;
+  background-color: #ed8a53f3;
+  padding: 1.5vw;
+  margin: 1.5vw;
+  margin-left: 4vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  grid-template-rows: 1fr 1fr 3fr 1fr;
+  grid-template-areas:
+    "name"
+    "email"
+    "message"
+    "send";
+
+  overflow-y: hidden;
+}
+
+.g-recaptcha {
+  padding-right: 10%;
+}
+
+.emailModalInput input {
+  vertical-align: middle;
+  font-size: 1.5vw;
+  background-color: #ffe1a1;
+  border: 2px solid #ffe1a1;
+  width: 100%;
+}
+input::placeholder {
+  color: #282828;
+}
+textarea::placeholder {
+  color: #282828;
+}
+
+.modalBox2 input,
+.modalBox3 input,
+.modalBox4 input {
+  padding: 0.75vw;
+  font-family: Raleway;
+  color: black;
+}
+
+.modalBox5 textarea {
+  height: 87%;
+  width: 100%;
+  font-size: 1.5vw;
+  background-color: #ffe1a1;
+  border: 2px solid #ffe1a1;
+  resize: none;
+  font-family: Raleway;
+  padding: 0.75vw;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.modalBox6 input {
+  border: none;
+  color: black;
+  background-color: #ffe1a1;
+  font-size: 0.75vw;
+  padding: 1vw;
+  width: 9vw;
+  font-size: 20px;
+  border-radius: 3px;
+  font-family: Raleway;
+  transition: all 0.5s ease;
+}
+.modalBox6 input:hover {
+  cursor: pointer;
+  background-color: #f07d3f;
+}
+
 /* ------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------ */
 /* arrow css code */
@@ -480,7 +592,7 @@ a.middle-animation:hover:before {
 
 .arrow-a:hover {
   cursor: pointer;
-  background-color: plum;
+  background-color: #ed8a53;
   border-radius: 100%;
 }
 

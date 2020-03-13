@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 
 <script src="./js/index.js" async defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 
 <html>
   <head>
@@ -32,377 +34,427 @@
 
     <main>
       <div class="home">
-        <div class="home-div home-1" id="home-div-id">
-          <div class="home-1-grid">
-            <div class="home-1-hello ">
-              <p>
-                hi, i'm hashim, a graduate web designer / developer from high
-                wycombe. <br /><br />
-              </p>
+        <section>
+          <div class="home-div home-1" id="home-div-id">
+            <div class="home-1-grid">
+              <div class="home-1-hello ">
+                <p>
+                  hi, i'm hashim, a graduate web designer / developer from high
+                  wycombe. <br /><br />
+                </p>
+              </div>
+              <div class="home-1-image">
+                <p></p>
+              </div>
             </div>
-            <div class="home-1-image">
-              <p></p>
+            <!-- ADD DOWN ARROW HERE -->
+            <div class="arrow" style="padding-right: 8vw;">
+              <a
+                class="fa fa-arrow-down fa-2x arrow-a"
+                id="home-1-arrow"
+                onclick="scrollDown('home-2-div')"
+              ></a>
             </div>
           </div>
-          <!-- ADD DOWN ARROW HERE -->
-          <div class="arrow" style="padding-right: 8vw;">
-            <a
-              class="fa fa-arrow-down fa-2x arrow-a"
-              id="home-1-arrow"
-              onclick="scrollDown('home-2-div')"
-            ></a>
-          </div>
-        </div>
+        </section>
 
-        <div class="home-div home-2" id="home-2-div">
-          <div class="home-2-grid">
-            <div class="home-2-image">
-              <p></p>
+<section>
+          <div class="home-div home-2" id="home-2-div">
+            <div class="home-2-grid">
+              <div class="home-2-image">
+                <p></p>
+              </div>
+              <div class="home-2-hello para-hidden">
+                <p>
+                  my passion is creating
+                  <span class="hover-text"><b> simple</b></span>
+                  yet
+                  <span class="hover-text"><b> intuitive </b></span>websites from
+                  scratch; why not check them out below.
+                </p>
+              </div>
             </div>
-            <div class="home-2-hello para-hidden">
-              <p>
-                my passion is creating
-                <span class="hover-text"><b> simple</b></span>
-                yet
-                <span class="hover-text"><b> intuitive </b></span>websites from
-                scratch; why not check them out below.
-              </p>
+            <!-- ADD DOWN ARROW HERE -->
+            <div class="arrow" style="padding-right: 8vw;">
+              <a
+                class="fa fa-arrow-up fa-2x arrow-a"
+                id="home-2-arrow"
+                href="#"
+              ></a>
+              <a
+                class="fa fa-arrow-down fa-2x arrow-a"
+                id="home-2-arrow"
+                onclick="scrollDown('work-div')"
+              ></a>
             </div>
           </div>
-          <!-- ADD DOWN ARROW HERE -->
-          <div class="arrow" style="padding-right: 8vw;">
-            <a
-              class="fa fa-arrow-up fa-2x arrow-a"
-              id="home-2-arrow"
-              href="#"
-            ></a>
-            <a
-              class="fa fa-arrow-down fa-2x arrow-a"
-              id="home-2-arrow"
-              onclick="scrollDown('work-div')"
-            ></a>
-          </div>
-        </div>
+</section>
 
         <div class="home-div home-3" id="work-div">
           <!-- this is "my work" -->
-          <div class="home-3-container">
-            <div class="work-div">
-              <div class="work-div-grid" id="cheat-day-div">
-                <div class="work-link">
-                  <a href="">
-                    <img
-                      src="../images/cheat-day.png"
-                      alt="cheat day"
-                      class="work-img"
-                    />
-                  </a>
-                  <ul class="lang-tags">
-                    <li>HTML5</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Node.js</li>
-                    <li>Express</li>
-                    <li>NodeMailer</li>
-                  </ul>
-                </div>
-                <div class="work-description">
-                  <p class="desc-header">
-                    <b>cheat day</b>
-                    <span class="link-source">
-                      <a
-                        href="https://github.com/hashimh/cheat-day-website"
-                        target="_blank"
-                        >source code</a
-                      >
-                    </span>
-                  </p>
-                  <br />
-                  <p>
-                    the cheat day website is a website I created for my fathers
-                    restaurant / takeaway business, to suit the new style he was
-                    decorating the shop in. <br />
-                    it is a primarily static site designed to provide
-                    information to its users about the shops menues, as well as
-                    a form of them providing feedback to the business.
-                    <br /><br />
-                    this project is ongoing as an ordering system may be created
-                    on this site to allow customers to order food as well.
-                  </p>
-                </div>
-              </div>
-              <!-- ADD DOWN ARROW HERE -->
-              <div class="arrow bounce">
-                <a
-                  class="fa fa-arrow-up fa-2x arrow-a"
-                  onclick="scrollDown('home-2-div')"
-                ></a>
-                <a
-                  class="fa fa-arrow-down fa-2x arrow-a"
-                  href="#tab-app-div"
-                ></a>
-              </div>
-            </div>
-
-            <div class="work-div">
-              <div class="work-div-grid anchor" id="tab-app-div">
-                <div class="work-link">
-                  <a href="https://tablature-app.herokuapp.com" target="_blank">
-                    <img
-                      src="../images/tab-app.png"
-                      alt="tab app"
-                      class="work-img"
-                    />
-                  </a>
-                  <ul class="lang-tags">
-                    <li>HTML5</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Node.js</li>
-                    <li>Express</li>
-                    <li>MongoDB</li>
-                  </ul>
-                </div>
-                <div class="work-description">
-                  <p class="desc-header">
-                    <b>tablature app (WIP)</b>
-                    <span class="link-source">
-                      <a
-                        href="https://github.com/hashimh/cheat-day-website"
-                        target="_blank"
-                        >source code</a
-                      >
-                    </span>
-                  </p>
-                  <br />
-                  <p>
-                    my first ever website development project, a guitar
-                    tablature transcription application, introduced me to the
-                    world of UI / UX design and development, created as my
-                    dissertation project.<br />
-                    it combined a big passion of mine, playing guitar, with what
-                    I was studying at the time. This application is still under
-                    development as a personal project of mine. <br /><br />this
-                    project also gave me an insite on incorporating sound into a
-                    webpage, something that I wish to continue playing with in
-                    future projects.
-                  </p>
-                </div>
-              </div>
-              <br /><br />
-              <!-- ADD DOWN ARROW HERE -->
-              <div class="arrow bounce">
-                <a
-                  class="fa fa-arrow-up fa-2x arrow-a"
-                  onclick="scrollDown('work-div')"
-                ></a>
-                <a
-                  class="fa fa-arrow-down fa-2x arrow-a"
-                  onclick="scrollDown('react-div')"
-                ></a>
-              </div>
-            </div>
-
-            <div class="work-div" id="work-div-last">
-              <div class="work-div-grid" id="react-div">
-                <div class="work-link">
-                  <a href="#" target="_blank">
-                    <div class="img-row">
-                      <a
-                        href="https://react-todo-270618.appspot.com/"
-                        target="_blank"
-                      >
+            <div class="home-3-container">
+                <div class="work-div">
+                  <div class="work-div-grid" id="cheat-day-div">
+                    <div class="work-link">
+                      <a href="">
                         <img
-                          src="../images/todo2.png"
-                          alt="to do app"
-                          class="work-img react-img"
-                          id="left-img"
+                          src="../images/cheat-day.png"
+                          alt="cheat day"
+                          class="work-img"
                         />
                       </a>
-                      <a
-                        href="https://react-calc-270709.appspot.com"
-                        target="_blank"
-                      >
-                        <img
-                          src="../images/calc2.png"
-                          alt="calculator app"
-                          class="work-img react-img"
-                        />
-                      </a>
+                      <ul class="lang-tags">
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>NodeMailer</li>
+                      </ul>
                     </div>
-                  </a>
-                  <ul class="lang-tags">
-                    <li>HTML5</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>JSX</li>
-                    <li>Node.js</li>
-                    <li>React</li>
-                  </ul>
-                </div>
-                <div class="work-description">
-                  <p class="desc-header">
-                    <b>react - todo list | calculator</b>
-                    <span class="link-source">
-                      <a
-                        href="https://github.com/hashimh/react-todo"
-                        target="_blank"
-                        >source</a
-                      >
-                      &nbsp;|
-                      <a
-                        href="https://github.com/hashimh/react-calc"
-                        target="_blank"
-                        >code</a
-                      >
-                    </span>
-                  </p>
-                  <br />
-                  <p>
-                    upon researching modern website development techniques in
-                    the industry, i decided to teach myself the fundamentals of
-                    React.js, a library for developing user interfaces. <br />
-                    <br />
-                    i have created a few very basic static applications using
-                    online tutorials, as well as read up on its documentation,
-                    and taught myself the foundations of what it is and how to
-                    use it. these are hosted on the cloud, using Googles cloud
-                    sdk.
-                    <br />
-                    <br />this is a library i would like to further study in a
-                    professional working environment, to see its uses in the
-                    real world.
-                  </p>
-                </div>
-              </div>
-              <!-- ADD DOWN ARROW HERE -->
-              <div class="arrow bounce">
-                <a
-                  class="fa fa-arrow-up fa-2x arrow-a"
-                  onclick="scrollDown('tab-app-div')"
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
+                    <div class="work-description">
+                      <p class="desc-header">
+                        <b>cheat day</b>
+                        <span class="link-source">
+                          <a
+                            href="https://github.com/hashimh/cheat-day-website"
+                            target="_blank"
+                            >source code</a
+                          >
+                        </span>
+                      </p>
+                      <br />
+                      <p>
+                        the cheat day website is a website I created for my fathers
+                        restaurant / takeaway business, to suit the new style he was
+                        decorating the shop in. <br />
+                        it is a primarily static site designed to provide
+                        information to its users about the shops menues, as well as
+                        a form of them providing feedback to the business.
+                        <br /><br />
+                        this project is ongoing as an ordering system may be created
+                        on this site to allow customers to order food as well.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- ADD DOWN ARROW HERE -->
+                  <div class="arrow bounce">
+                    <a
+                      class="fa fa-arrow-up fa-2x arrow-a"
+                      onclick="scrollDown('home-2-div')"
+                    ></a>
+                    <a
+                      class="fa fa-arrow-down fa-2x arrow-a"
+                      href="#tab-app-div"
+                      ></a>
+                    </div>
+                  </div>
 
-        <div class="home-div home-4" id="about-div">
-          <div class="home-4-container">
-            <p id="about-1-title">what about myself ?</p>
-            <div class="about-1">
-              <div class="about-1-text">
-                <p>
-                  that's me, with some mirrors.
-                </p>
-                <p>
-                  my interest for creativity, design and website development
-                  developed whilst studying computer science at the university
-                  of portsmouth, and living by the coast in southsea.
-                </p>
-                <p>
-                  with design, i like to keep things simple: conveying all
-                  necessary information without too much going on for the users
-                  eyes to decypher. although my main interests are in creating
-                  picturesque front-end experiences, i am experienced in using
-                  back-end technologies such as <b>NodeJS</b>,
-                  <b>Express</b> and <b>MongoDB</b> . . . <br />
-                  <br />
-                  <i>. . . but you can read more about this on my cv below.</i>
-                </p>
-              </div>
-              <div class="about-1-img">
-                <img
-                  src="../images/brighton-mirrors.jpg"
-                  alt="me and some mirrors"
-                />
-              </div>
-            </div>
-
-            <div class="about-2">
-              <!-- <u class="about-2-list"> -->
-              <!-- <p id="about-2-title">my hobbies / passions</p> -->
-              <ul class="about-2-gallery">
-                <li>
-                  <video
-                    onmouseover="this.play()"
-                    onmouseout="this.pause()"
-                    loop
-                  >
-                    <source
-                      src="../images/image gallery/guitar-lofi.mp4"
-                      type="video/mp4"
-                    />
-                  </video>
-                </li>
-                <li>
-                  <img
-                    src="../images/image gallery/lahore-mosque.jpg"
-                    alt="lahore"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="../images/image gallery/guitar.jpg"
-                    alt="my telecaster"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="../images/image gallery/pakistan-mountain.JPG"
-                    alt="me on a mountain"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="../images/image gallery/guitar-pedals.jpg"
-                    alt="my guitar setup"
-                  />
-                </li>
-                <li>
-                  <video
-                    onmouseover="this.play()"
-                    onmouseout="this.pause()"
-                    loop
-                  >
-                    <source
-                      src="../images/image gallery/paris-skate-2_Trim.mp4"
-                      type="video/mp4"
-                    />
-                  </video>
-                </li>
-              </ul>
-            </div>
-
-            <div class="about-3">
-              <p id="about-3-title">get into contact</p>
-              <div class="about-3-grid">
-                <div class="about-3-info">
-                  <!-- info here -->
-                  <p class="about-3-1-para">
-                    you can find my contact information and social accounts
-                    below to check out my online presence. or, send a message
-                    and we can chat.
-                  </p>
-                  <ul class="about-3-1-links">
-                    <li>
-                      <i class="fa fa-envelope"></i
-                      ><a>hashim_hussain98@hotmail.co.uk</a>
-                    </li>
-                    <li><i class="fa fa-phone"></i><a>07476 343144</a></li>
-                  </ul>
-                  <div class="about-3-1-socials">
-                    <a href="" class="fa fa-2x fa-github"></a>
-                    <a href="" class="fa fa-2x fa-linkedin"></a>
-                    <a href="" class="fa fa-2x fa-file"></a>
+                <div class="work-div">
+                  <div class="work-div-grid anchor" id="tab-app-div">
+                    <div class="work-link">
+                      <a href="https://tablature-app.herokuapp.com" target="_blank">
+                        <img
+                          src="../images/tab-app.png"
+                          alt="tab app"
+                          class="work-img"
+                        />
+                      </a>
+                      <ul class="lang-tags">
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>MongoDB</li>
+                      </ul>
+                    </div>
+                    <div class="work-description">
+                      <p class="desc-header">
+                        <b>tablature app (WIP)</b>
+                        <span class="link-source">
+                          <a
+                            href="https://github.com/hashimh/cheat-day-website"
+                            target="_blank"
+                            >source code</a
+                          >
+                        </span>
+                      </p>
+                      <br />
+                      <p>
+                        my first ever website development project, a guitar
+                        tablature transcription application, introduced me to the
+                        world of UI / UX design and development, created as my
+                        dissertation project.<br />
+                        it combined a big passion of mine, playing guitar, with what
+                        I was studying at the time. This application is still under
+                        development as a personal project of mine. <br /><br />this
+                        project also gave me an insite on incorporating sound into a
+                        webpage, something that I wish to continue playing with in
+                        future projects.
+                      </p>
+                    </div>
+                  </div>
+                  <br /><br />
+                  <!-- ADD DOWN ARROW HERE -->
+                  <div class="arrow bounce">
+                    <a
+                      class="fa fa-arrow-up fa-2x arrow-a"
+                      onclick="scrollDown('work-div')"
+                    ></a>
+                    <a
+                      class="fa fa-arrow-down fa-2x arrow-a"
+                      onclick="scrollDown('react-div')"
+                    ></a>
                   </div>
                 </div>
-                <div class="about-3-email">
-                  <!-- email me -->
+
+  <div class="work-div" id="work-div-last">
+                  <div class="work-div-grid" id="react-div">
+                    <div class="work-link">
+                      <a href="#" target="_blank">
+                        <div class="img-row">
+                          <a
+                            href="https://react-todo-270618.appspot.com/"
+                            target="_blank"
+                          >
+                            <img
+                              src="../images/todo2.png"
+                              alt="to do app"
+                              class="work-img react-img"
+                              id="left-img"
+                            />
+                          </a>
+                          <a
+                            href="https://react-calc-270709.appspot.com"
+                            target="_blank"
+                          >
+                            <img
+                              src="../images/calc2.png"
+                              alt="calculator app"
+                              class="work-img react-img"
+                            />
+                          </a>
+                        </div>
+                      </a>
+                      <ul class="lang-tags">
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>JSX</li>
+                        <li>Node.js</li>
+                        <li>React</li>
+                      </ul>
+                    </div>
+                    <div class="work-description">
+                      <p class="desc-header">
+                        <b>react - todo list | calculator</b>
+                        <span class="link-source">
+                          <a
+                            href="https://github.com/hashimh/react-todo"
+                            target="_blank"
+                            >source</a
+                          >
+                          &nbsp;|
+                          <a
+                            href="https://github.com/hashimh/react-calc"
+                            target="_blank"
+                            >code</a
+                          >
+                        </span>
+                      </p>
+                      <br />
+                      <p>
+                        upon researching modern website development techniques in
+                        the industry, i decided to teach myself the fundamentals of
+                        React.js, a library for developing user interfaces. <br />
+                        <br />
+                        i have created a few very basic static applications using
+                        online tutorials, as well as read up on its documentation,
+                        and taught myself the foundations of what it is and how to
+                        use it. these are hosted on the cloud, using Googles cloud
+                        sdk.
+                        <br />
+                        <br />this is a library i would like to further study in a
+                        professional working environment, to see its uses in the
+                        real world.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- ADD DOWN ARROW HERE -->
+                  <div class="arrow bounce">
+                    <a
+                      class="fa fa-arrow-up fa-2x arrow-a"
+                      onclick="scrollDown('tab-app-div')"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <div class="home-div home-4" id="about-div">
+            <div class="home-4-container">
+              <p id="about-1-title">what about myself ?</p>
+              <div class="about-1">
+                <div class="about-1-text">
+                  <p>
+                    that's me, with some mirrors.
+                  </p>
+                  <p>
+                    my interest for creativity, design and website development
+                    developed whilst studying computer science at the university
+                    of portsmouth, and living by the coast in southsea.
+                  </p>
+                  <p>
+                    with design, i like to keep things simple: conveying all
+                    necessary information without too much going on for the users
+                    eyes to decypher. although my main interests are in creating
+                    picturesque front-end experiences, i am experienced in using
+                    back-end technologies such as <b>NodeJS</b>,
+                    <b>Express</b> and <b>MongoDB</b> . . . <br />
+                    <br />
+                    <i>. . . but you can read more about this on my cv below.</i>
+                  </p>
+                </div>
+                <div class="about-1-img">
+                  <img
+                    src="../images/brighton-mirrors.jpg"
+                    alt="me and some mirrors"
+                  />
+                </div>
+              </div>
+
+              <div class="about-2">
+                <!-- <u class="about-2-list"> -->
+                <!-- <p id="about-2-title">my hobbies / passions</p> -->
+                <ul class="about-2-gallery">
+                  <li>
+                    <video
+                      onmouseover="this.play()"
+                      onmouseout="this.pause()"
+                      loop
+                    >
+                      <source
+                        src="../images/image gallery/guitar-lofi.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </li>
+                  <li>
+                    <img
+                      src="../images/image gallery/lahore-mosque.jpg"
+                      alt="lahore"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="../images/image gallery/guitar.jpg"
+                      alt="my telecaster"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="../images/image gallery/pakistan-mountain.JPG"
+                      alt="me on a mountain"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="../images/image gallery/guitar-pedals.jpg"
+                      alt="my guitar setup"
+                    />
+                  </li>
+                  <li>
+                    <video
+                      onmouseover="this.play()"
+                      onmouseout="this.pause()"
+                      loop
+                    >
+                      <source
+                        src="../images/image gallery/paris-skate-2_Trim.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="about-3">
+                <p id="about-3-title">get into contact</p>
+                <div class="about-3-grid">
+                  <div class="about-3-info">
+                    <!-- info here -->
+                    <p class="about-3-1-para">
+                      you can find my contact information, cv, and social accounts
+                      below to check out my online presence. or, send a message
+                      and we can chat.
+                    </p>
+                    <ul class="about-3-1-links">
+                      <li>
+                        <i class="fa fa-envelope"></i
+                        ><a>hashim_hussain98@hotmail.co.uk</a>
+                      </li>
+                      <li><i class="fa fa-phone"></i><a>07476 343144</a></li>
+                    </ul>
+                    <div class="about-3-1-socials">
+                      <a href="" target="_blank" class="fa fa-2x fa-github"><span class="tooltip">github</span></a class="fa-link">
+                      <a href="" target="_blank" class="fa fa-2x fa-linkedin"><span class="tooltip">linkedin</span></a>
+                      <a href="" target="_blank" class="fa fa-2x fa-file"><span class="tooltip">my cv</span></a>
+                    </div>
+                  </div>
+                  <div class="about-3-email">
+                    <!-- email me, get modal form from cheat day website -->
+                    <div class="modalContent">
+                      <div class="emailModalInput modalBox2">
+                        <input
+                          id="userName"
+                          type="text"
+                          name="userName"
+                          placeholder="your name..."
+                          onchange="nameValidate(this.value)"
+                          maxlength="32"
+                        />
+                      </div>
+
+                      <div class="emailModalInput modalBox3">
+                        <input
+                          id="userEmail"
+                          type="email"
+                          name="userEmail"
+                          placeholder="your email..."
+                          onchange="emailValidate(this.value)"
+                          autocomplete="new-password"
+                        />
+                      </div>
+
+                      <div class="emailModalInput modalBox5">
+                        <textarea
+                          id="mailMessage"
+                          name="mailMessage"
+                          placeholder="type your message here..."
+                          onchange="inputValidate(this.value, 1, 'mailMessage')"
+                        ></textarea>
+                      </div>
+
+                      <div class="modalBox6">
+                        <div
+                          class="g-recaptcha"
+                          data-sitekey="6Lcff9sUAAAAAHjNVe8pM9Y9qtVdnOcF2weJcnp4"
+                        ></div>
+                        <input
+                          id="sendMessage"
+                          type="button"
+                          name="sendBtn"
+                          value="send"
+                          onclick="sendBtnClicked()"
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
       </div>
     </main>
   </body>
