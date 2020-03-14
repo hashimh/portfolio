@@ -25,10 +25,10 @@
     <header>
       <ul id="navbar" class="navbar">
         <li class="navheader">
-          <a class="middle-animation nav-active" href="#">hashim hussain</a>
+          <a class="middle-animation nav-active" onclick="scrollDown('home-div-id')">hashim hussain</a>
         </li>
-        <li><a class="middle-animation" href="#about-div">about me</a></li>
-        <li><a class="middle-animation" href="#work-div">my work</a></li>
+        <li><a class="middle-animation" onclick="scrollDown('about-div')">about me</a></li>
+        <li><a class="middle-animation" onclick="scrollDown('work-div')">my work</a></li>
       </ul>
     </header>
 
@@ -59,10 +59,13 @@
 
           <div class="home-div home-2" id="home-2-div">
             <div class="home-2-grid">
-              <div class="home-2-image">
-                <p></p>
+              <div class="home-2-anim home-2-image para-hidden">
+                <div class="color-div" id="color-1"></div>
+                <div class="color-div" id="color-2"></div>
+                <div class="color-div" id="color-3"></div>
+                <div class="color-div" id="color-4"></div>
               </div>
-              <div class="home-2-hello para-hidden">
+              <div class="home-2-anim home-2-hello para-hidden">
                 <p>
                   my passion is creating
                   <span class="hover-text"><b> simple</b></span>
@@ -401,13 +404,12 @@
                         <!-- info here -->
                         <p class="about-3-1-para">
                           you can find my contact information, cv, and social accounts
-                          below to check out my online presence. or, send a message
-                          and we can chat.
+                          below. or, send a message and we can chat.
                         </p>
                         <ul class="about-3-1-links">
                           <li>
                             <i class="fa fa-envelope"></i
-                            ><a id="mail-link" href="mailto:hashim_hussain98@hotmail.co.uk" target="_top">hashim_hussain98@hotmail.co.uk</a>
+                            ><a id="mail-link" href="mailto:hashimh5853@gmail.com" target="_top">hashimh5853@gmail.com</a>
                           </li>
                           <li><i class="fa fa-phone"></i><a>07476 343144</a></li>
                         </ul>
@@ -452,10 +454,6 @@
                           </div>
 
                           <div class="modalBox6">
-                            <div
-                              class="g-recaptcha"
-                              data-sitekey="6Lcff9sUAAAAAHjNVe8pM9Y9qtVdnOcF2weJcnp4"
-                            ></div>
                             <input
                               id="sendMessage"
                               type="button"
@@ -464,6 +462,11 @@
                               onclick="sendBtnClicked()"
                             />
                           </div>
+
+                          <div class="modalBox7" id="errorMsgDiv">
+                            <p id="errorMsg"></p>
+                          </div>
+
                         </div>
                         <div class="arrow bounce" id="contact-arrow">
                           <a

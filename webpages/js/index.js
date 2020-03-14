@@ -53,7 +53,7 @@ window.onscroll = function() {
 let animateHTML = function() {
   let elem, windowHeight;
   let init = function() {
-    elem = document.getElementsByClassName("home-2-hello");
+    elem = document.getElementsByClassName("home-2-anim");
     windowHeight = window.innerHeight;
     _addEventHandlers();
   };
@@ -163,3 +163,71 @@ window.onmousemove = function(e) {
     tooltip[i].style.left = x + 20 + "px";
   }
 };
+
+// Function to handle send button click
+async function sendBtnClicked() {
+  // First, if things are empty, output an error message in #errorMsg
+  // Then, check content of subject is > 1, and message length > 1.
+  // Then, check the RECAPTCHA has authorised the user.
+  // Save all 4 input fields into variables to be sent to a server.js function
+  let nameIn = document.getElementById("userName");
+  let emailIn = document.getElementById("userEmail");
+  let messageIn = document.getElementById("mailMessage");
+
+  let errorMsg = document.getElementById("errorMsg");
+  let errorDiv = document.getElementById("errorMsgDiv");
+
+  if (isName(nameIn.value) !== true) {
+    errorMsg.innerHTML = "please enter a valid name";
+  } else {
+    if (isEmail(emailIn.value) !== true) {
+      errorMsg.innerHTML = "please enter a valid email address";
+    } else {
+      if (messageIn.value.length < 10) {
+        errorMsg.innerHTML = "please enter a valid message";
+      } else {
+        // ALL INPUTS HAVE BEEN VALIDATED, MESSAGE CAN NOW BE SENT
+        errorMsg.innerHTML = "";
+        const fetchOptions = {
+          credentials: "same-origin",
+          method: "POST"
+        };
+
+        let url =
+          "/api/sendMail" +
+          "?name=" +
+          encodeURIComponent(nameIn.value) +
+          "&email=" +
+          encodeURIComponent(emailIn.value) +
+          "&message=" +
+          encodeURIComponent(messageIn.value);
+
+        const response = await fetch(url, fetchOptions);
+        if (!response.ok) {
+          // handle the error
+          console.log("Fetch response for /api/sendMail has failed.");
+          return;
+        } else {
+          console.log("Successful /api/sendMail call.");
+          nameIn.value = "";
+          emailIn.value = "";
+          messageIn.value = "";
+          nameIn.style.backgroundColor = "#ffe1a1";
+          emailIn.style.backgroundColor = "#ffe1a1";
+          messageIn.style.backgroundColor = "#ffe1a1";
+          nameIn.style.border = "2px solid #ffe1a1";
+          emailIn.style.border = "2px solid #ffe1a1";
+          messageIn.style.border = "2px solid #ffe1a1";
+        }
+        errorMsg.innerHTML = "your message has been sent :)";
+        errorDiv.style.backgroundColor = "#ed8a53f3";
+
+        setTimeout(function() {
+          // Clear modal content and close modal
+          errorMsg.innerHTML = "";
+          errorDiv.style.backgroundColor = "ed8a53f3";
+        }, 5000);
+      }
+    }
+  }
+}

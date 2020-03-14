@@ -59,6 +59,7 @@ html {
   display: block;
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
 a.middle-animation {
   position: relative;
@@ -185,6 +186,26 @@ a.middle-animation:hover:before {
   }
 }
 
+.color-div {
+  width: 75%;
+  margin-left: 4vw;
+}
+.home-2-image {
+  padding-left: 5vw;
+  margin-top: 9vw;
+}
+#color-1 {
+  background-color: #ed8a53;
+}
+#color-2 {
+  background-color: #aec6cf;
+}
+#color-3 {
+  background-color: #d291bc;
+}
+#color-4 {
+  background-color: #fe9c8f;
+}
 /* ------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------ */
 /* home 3 div css - my work */
@@ -208,7 +229,7 @@ a.middle-animation:hover:before {
 .home-3-container {
   display: grid;
   padding: 10vh;
-  padding-top: 15%;
+  padding-top: 12.5%;
 
   grid-template-areas:
     "cheat-day"
@@ -507,6 +528,15 @@ a.fa:hover span {
 .modalBox6 {
   grid-area: send;
 }
+.modalBodx7 {
+  grid-area: error;
+}
+
+#errorMsg {
+  font-size: 1.5vw;
+  text-align: center;
+  margin: 1vw;
+}
 
 .modalContent {
   height: 28.5vw;
@@ -520,10 +550,10 @@ a.fa:hover span {
 
   grid-template-rows: 1fr 1fr 3fr 1fr;
   grid-template-areas:
-    "name"
-    "email"
-    "message"
-    "send";
+    "name name"
+    "email email"
+    "message message"
+    "send error";
 
   overflow-y: hidden;
 }
@@ -629,4 +659,8 @@ input:focus {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   transform: translate(0, -20px);
+}
+
+#contact-arrow {
+  padding-right: 1.5vw;
 }
