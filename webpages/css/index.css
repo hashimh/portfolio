@@ -484,6 +484,15 @@ a.fa:hover span {
   padding: 0 1vw 0 1vw;
   z-index: 10;
 }
+
+#mail-link {
+  color: black;
+  transition: all 0.25s ease;
+}
+#mail-link:hover {
+  color: #ed8a53;
+}
+
 /* modal code */
 .modalBox2 {
   grid-area: name;
