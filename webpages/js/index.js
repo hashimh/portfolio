@@ -80,10 +80,10 @@ let animateHTML = function() {
 animateHTML().init();
 
 // Function to handle scroll down events
-// function scrollDown(id) {
-//   let div = document.getElementById(id);
-//   div.scrollIntoView({ behavior: "smooth", block: "start" });
-// }
+function scrollDown(id) {
+  let div = document.getElementById(id);
+  div.scrollIntoView({ behavior: "smooth", block: "start" });
+}
 
 // Modal code
 function emailValidate(email) {
@@ -163,30 +163,3 @@ window.onmousemove = function(e) {
     tooltip[i].style.left = x + 20 + "px";
   }
 };
-
-$(document).keydown(function(e) {
-  var $activeSection = $("section.active"),
-    $newActiveSection;
-  if (e.which == 38) {
-    // Up
-    $newActiveSection = $activeSection.prev("section");
-    if (!$newActiveSection.length) {
-      $newActiveSection = $("section").last();
-    }
-  } else if (e.which == 40) {
-    // Down
-    $newActiveSection = $activeSection.next("section");
-    if (!$newActiveSection.length) {
-      $newActiveSection = $("section").first();
-    }
-  }
-  $activeSection.removeClass("active");
-  $newActiveSection.addClass("active");
-  scrollToObject($newActiveSection);
-
-  e.preventDefault();
-});
-
-function scrollToObject(object) {
-  $(window).scrollTop(object.offset().top);
-}

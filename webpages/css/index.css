@@ -354,6 +354,7 @@ a.middle-animation:hover:before {
   box-shadow: 5px 5px 10px black;
 }
 .about-1 {
+  height: 55vh;
   font-size: 1.5vw;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
@@ -367,8 +368,7 @@ a.middle-animation:hover:before {
   grid-area: about-gallery;
 }
 .about-2 {
-  height: 75vh;
-  padding-top: 10%;
+  padding-top: 5%;
   padding-right: 1vw;
 }
 .about-2 p {
@@ -392,6 +392,7 @@ a.middle-animation:hover:before {
   padding-left: 0;
   margin-left: 10%;
   margin-right: 10%;
+  padding-bottom: 10vh;
 }
 
 .about-2-gallery li {
@@ -413,6 +414,10 @@ a.middle-animation:hover:before {
 .about-2-gallery img:hover,
 .about-2-gallery video:hover {
   opacity: 1;
+}
+
+#about-arrows {
+  padding-right: 2vw;
 }
 
 /* about 3 / contact */
