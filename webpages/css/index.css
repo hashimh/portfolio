@@ -1,5 +1,5 @@
 body {
-  background-color: #fff4c7;
+  background-color: var(--background-bg);
   font-family: Raleway;
   /* background-image: linear-gradient(#e4cae7, #e093e9); */
   transition: all 0.5s ease;
@@ -20,14 +20,20 @@ html {
 
 /* responsive background colours */
 :root {
-  /* dark */
-  --dark-bg: #ed8a53;
-
   /* darkest */
   --darkest-bg: #f07d3f;
 
+  /* dark */
+  --dark-bg: #ed8a53;
+
   /* lightest */
   --lightest-bg: #ffe1a1;
+
+  /* background */
+  --background-bg: #fff4c7;
+
+  /* light */
+  --light-bg: #ffe1a1ef;
 }
 
 /* ------------------------------------------------------------------------------ */
@@ -103,7 +109,7 @@ a.middle-animation:hover:before {
   font-size: 2.4vw;
 }
 .navbar-colour {
-  background-color: #ffe1a1ef;
+  background-color: var(--light-bg);
   border-bottom: 2px solid black;
   transition: ease-in-out 0.4s;
 }
@@ -624,18 +630,18 @@ input:focus {
 .modalBox6 input {
   border: none;
   color: black;
-  background-color: var(--lightest-bg)
+  background-color: var(--lightest-bg);
   font-size: 0.75vw;
   padding: 1vw;
   width: 9vw;
   font-size: 20px;
   border-radius: 3px;
   font-family: Raleway;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in-out;
 }
 .modalBox6 input:hover {
   cursor: pointer;
-  background-color: var(--darkest-bg);
+  border: 2px solid black;
 }
 
 /* ------------------------------------------------------------------------------ */

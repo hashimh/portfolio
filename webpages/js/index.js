@@ -52,10 +52,11 @@ function colorChange(col) {
     light = "#e4a0b7";
     lightest = "#ecbdc4";
   }
-  console.log(dark, light, lightest);
 
   // now, get each element which needs background colour changed and change it, starting with dark -> light -> lightest
   let root = document.documentElement;
+  // darkest
+  root.style.setProperty("--darkest-bg", darkest);
 
   // dark:
   document.getElementById("modal-cont").style.backgroundColor = dark;
@@ -70,9 +71,9 @@ function colorChange(col) {
   root.style.setProperty("--dark-bg", dark);
 
   // light
-  document.getElementsByClassName(
-    "navbar-colour"
-  )[0].style.backgroundColor = light;
+  root.style.setProperty("--light-bg", light);
+  // document.getElementsByClassName("navbar-clear")[0].style.backgroundColor =
+  //   "transparent";
   let modalInputs = document.getElementsByClassName("modal-entry");
   for (let i = 0; i < modalInputs.length; i++) {
     modalInputs[i].style.backgroundColor = light;
@@ -81,9 +82,7 @@ function colorChange(col) {
 
   // lightest
   document.body.style.backgroundColor = lightest;
-
-  // darkest
-  root.style.setProperty("--darkest-bg", darkest);
+  root.style.setProperty("--background-bg", lightest);
 
   lightGlobal = light;
 }
@@ -102,20 +101,6 @@ window.onscroll = function() {
     navbar.classList.add("navbar-clear");
     navbar.classList.remove("navbar-colour");
   }
-
-  // let home = document.getElementById("home-div-id");
-  // let home2 = document.getElementById("home-2-div");
-  // let work = document.getElementById("work-div");
-  // if (checkVisible(home) == true) {
-  //   console.log("home");
-  // } else if (checkVisible(home2) == true) {
-  //   console.log("home");
-  //   6;
-  // } else if (this.checkVisible(work) == true) {
-  //   console.log("work");
-  // } else {
-  //   console.log("fuck");
-  // }
 };
 
 // function to animate the 2nd paragraph of home.html, when it comes into view
