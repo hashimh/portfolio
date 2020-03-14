@@ -2,20 +2,32 @@ body {
   background-color: #fff4c7;
   font-family: Raleway;
   /* background-image: linear-gradient(#e4cae7, #e093e9); */
+  transition: all 0.5s ease;
 }
-
 body::-webkit-scrollbar {
   width: 0.75vw;
 }
 body::-webkit-scrollbar-track {
-  background-color: #ffaa6f;
+  background-color: darkgray;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #ffe1a1;
+  background-color: gray;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+/* responsive background colours */
+:root {
+  /* dark */
+  --dark-bg: #ed8a53;
+
+  /* darkest */
+  --darkest-bg: #f07d3f;
+
+  /* lightest */
+  --lightest-bg: #ffe1a1;
 }
 
 /* ------------------------------------------------------------------------------ */
@@ -189,22 +201,31 @@ a.middle-animation:hover:before {
 .color-div {
   width: 75%;
   margin-left: 4vw;
+  transition: all 0.5s ease;
+}
+.color-div:hover {
+  cursor: pointer;
+  padding: 3.5vw;
+}
+
+.color-div-active {
+  border: 2px solid black;
 }
 .home-2-image {
   padding-left: 5vw;
   margin-top: 9vw;
 }
-#color-1 {
-  background-color: #ed8a53;
+#color-orange {
+  background-color: #ffe1a1;
 }
-#color-2 {
+#color-blue {
   background-color: #aec6cf;
 }
-#color-3 {
-  background-color: #d291bc;
+#color-purple {
+  background-color: #957dad;
 }
-#color-4 {
-  background-color: #fe9c8f;
+#color-pink {
+  background-color: #e4a0b7;
 }
 /* ------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------ */
@@ -292,8 +313,8 @@ a.middle-animation:hover:before {
   margin-bottom: 2vh;
   padding: 0.75vw;
   font-size: 1.25vw;
-  border: 2px solid #ffaa6f;
-  background-color: #ffaa6f;
+  border: 2px solid #ed8a53;
+  background-color: #ed8a53;
   border-radius: 1vh;
   font-weight: bold;
 }
@@ -332,7 +353,7 @@ a.middle-animation:hover:before {
   transition: background-color 0.5s ease-in-out;
 }
 .link-source a:hover {
-  background-color: #d291bc;
+  background-color: var(--dark-bg);
   border-radius: 1vw;
   background-clip: border-box;
 }
@@ -485,7 +506,7 @@ a.middle-animation:hover:before {
 }
 
 .about-3-1-socials a:hover {
-  background-color: #ed8a53;
+  background-color: var(--dark-bg);
 }
 
 a.fa {
@@ -511,7 +532,7 @@ a.fa:hover span {
   transition: all 0.5s ease;
 }
 #mail-link:hover {
-  color: #ed8a53;
+  color: var(--dark-bg);
 }
 
 /* modal code */
@@ -565,8 +586,8 @@ a.fa:hover span {
 .emailModalInput input {
   vertical-align: middle;
   font-size: 1.5vw;
-  background-color: #ffe1a1;
-  border: 2px solid #ffe1a1;
+  background-color: var(--lightest-bg);
+  border: 2px solid var(--lightest-bg);
   width: 100%;
 }
 input::placeholder {
@@ -588,8 +609,8 @@ textarea::placeholder {
   height: 87%;
   width: 100%;
   font-size: 1.5vw;
-  background-color: #ffe1a1;
-  border: 2px solid #ffe1a1;
+  background-color: var(--lightest-bg);
+  border: 2px solid var(--lightest-bg);
   resize: none;
   font-family: Raleway;
   padding: 0.75vw;
@@ -603,7 +624,7 @@ input:focus {
 .modalBox6 input {
   border: none;
   color: black;
-  background-color: #ffe1a1;
+  background-color: var(--lightest-bg)
   font-size: 0.75vw;
   padding: 1vw;
   width: 9vw;
@@ -614,7 +635,7 @@ input:focus {
 }
 .modalBox6 input:hover {
   cursor: pointer;
-  background-color: #f07d3f;
+  background-color: var(--darkest-bg);
 }
 
 /* ------------------------------------------------------------------------------ */
@@ -636,7 +657,7 @@ input:focus {
 
 .arrow-a:hover {
   cursor: pointer;
-  background-color: #ed8a53;
+  background-color: var(--dark-bg);
   border-radius: 100%;
 }
 

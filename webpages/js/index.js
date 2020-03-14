@@ -19,6 +19,75 @@ function checkVisible(el) {
   );
 }
 
+let lightGlobal = "#ffe1a1";
+// Color change function
+function colorChange(col) {
+  let darkest, dark, light, lightest;
+  // make current color active
+  let colors = document.getElementsByClassName("color-div");
+  for (let i = 0; i < colors.length; i++) {
+    colors[i].classList.remove("color-div-active");
+  }
+  document.getElementById(col).classList.add("color-div-active");
+
+  // first, determine which color has been clicked and assign variables accordingly
+  if (col == "color-orange") {
+    darkest = "#fa742c";
+    dark = "#ed8a53";
+    light = "#ffe1a1";
+    lightest = "#fff4c7";
+  } else if (col == "color-blue") {
+    darkest = "#0e789e";
+    dark = "#759ba9";
+    light = "#aeb6cf";
+    lightest = "#f3f5f5";
+  } else if (col == "color-purple") {
+    darkest = "#664c80";
+    dark = "#957dad";
+    light = "#d291bc";
+    lightest = "#e0bbe4";
+  } else if (col == "color-pink") {
+    darkest = "#b15677";
+    dark = "#e18aaa";
+    light = "#e4a0b7";
+    lightest = "#ecbdc4";
+  }
+  console.log(dark, light, lightest);
+
+  // now, get each element which needs background colour changed and change it, starting with dark -> light -> lightest
+  let root = document.documentElement;
+
+  // dark:
+  document.getElementById("modal-cont").style.backgroundColor = dark;
+  let ul = document.getElementsByClassName("lang-tags");
+  for (let i = 0; i < ul.length; i++) {
+    let li = ul[i].getElementsByTagName("li");
+    for (let j = 0; j < li.length; j++) {
+      li[j].style.backgroundColor = dark;
+      li[j].style.border = "2px solid " + dark;
+    }
+  }
+  root.style.setProperty("--dark-bg", dark);
+
+  // light
+  document.getElementsByClassName(
+    "navbar-colour"
+  )[0].style.backgroundColor = light;
+  let modalInputs = document.getElementsByClassName("modal-entry");
+  for (let i = 0; i < modalInputs.length; i++) {
+    modalInputs[i].style.backgroundColor = light;
+    modalInputs[i].style.border = "2px solid " + light;
+  }
+
+  // lightest
+  document.body.style.backgroundColor = lightest;
+
+  // darkest
+  root.style.setProperty("--darkest-bg", darkest);
+
+  lightGlobal = light;
+}
+
 // navigation bar scroll - add background colour
 let navbar = document.getElementById("navbar");
 window.onscroll = function() {
@@ -95,8 +164,8 @@ function emailValidate(email) {
     emailIn.style.border = "2px solid rgb(119, 221, 119)";
     emailIn.style.backgroundColor = "rgb(119, 221, 119)";
   } else if (emailIn.value == "") {
-    emailIn.style.border = "2px solid #ffe1a1";
-    emailIn.style.backgroundColor = "#ffe1a1";
+    emailIn.style.border = "2px solid " + lightGlobal;
+    emailIn.style.backgroundColor = lightGlobal;
   } else {
     emailIn.style.border = "2px solid rgb(255, 105, 97)";
     emailIn.style.backgroundColor = "rgb(255, 105, 97)";
@@ -111,8 +180,8 @@ function nameValidate(name) {
     nameIn.style.border = "2px solid rgb(119, 221, 119)";
     nameIn.style.backgroundColor = "rgb(119, 221, 119)";
   } else if (nameIn.value == "") {
-    nameIn.style.border = "2px solid #ffe1a1";
-    nameIn.style.backgroundColor = "#ffe1a1";
+    nameIn.style.border = "2px solid " + lightGlobal;
+    nameIn.style.backgroundColor = lightGlobal;
   } else {
     // Name does not match the regex - contains numbers etc
     nameIn.style.border = "2px solid rgb(255, 105, 97)";
@@ -126,8 +195,8 @@ function inputValidate(subject, targetLength, form) {
     subjectIn.style.border = "2px solid rgb(119, 221, 119)";
     subjectIn.style.backgroundColor = "rgb(119, 221, 119)";
   } else if (subject.length == 0) {
-    subjectIn.style.border = "2px solid #ffe1a1";
-    subjectIn.style.backgroundColor = "#ffe1a1";
+    subjectIn.style.border = "2px solid " + lightGlobal;
+    subjectIn.style.backgroundColor = lightGlobal;
   } else {
     // Subject length is too short
     subjectIn.style.border = "2px solid rgb(255, 105, 97)";
@@ -212,20 +281,18 @@ async function sendBtnClicked() {
           nameIn.value = "";
           emailIn.value = "";
           messageIn.value = "";
-          nameIn.style.backgroundColor = "#ffe1a1";
-          emailIn.style.backgroundColor = "#ffe1a1";
-          messageIn.style.backgroundColor = "#ffe1a1";
-          nameIn.style.border = "2px solid #ffe1a1";
-          emailIn.style.border = "2px solid #ffe1a1";
-          messageIn.style.border = "2px solid #ffe1a1";
+          nameIn.style.backgroundColor = lightGlobal;
+          emailIn.style.backgroundColor = lightGlobal;
+          messageIn.style.backgroundColor = lightGlobal;
+          nameIn.style.border = "2px solid " + lightGlobal;
+          emailIn.style.border = "2px solid " + lightGlobal;
+          messageIn.style.border = "2px solid " + lightGlobal;
         }
         errorMsg.innerHTML = "your message has been sent :)";
-        errorDiv.style.backgroundColor = "#ed8a53f3";
 
         setTimeout(function() {
           // Clear modal content and close modal
           errorMsg.innerHTML = "";
-          errorDiv.style.backgroundColor = "ed8a53f3";
         }, 5000);
       }
     }
