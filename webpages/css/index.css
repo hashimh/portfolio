@@ -705,6 +705,7 @@ input:focus {
 /* ------------------------------------------------------------------------------ */
 /* MOBILE CSS - PORTRAIT */
 @media screen and (max-width: 600px) {
+  /* @media screen and (max-width: 1024px) { */
   html,
   body {
     overflow-x: hidden;
