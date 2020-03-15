@@ -870,6 +870,9 @@ input:focus {
   .modalBox6 {
     padding-right: 1vh;
   }
+  #errorMsgDiv p {
+    font-size: 2vh;
+  }
 
   /* general */
   .arrow a {

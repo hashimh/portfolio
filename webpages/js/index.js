@@ -239,7 +239,7 @@ async function sendBtnClicked() {
     errorMsg.innerHTML = "please enter a valid name";
   } else {
     if (isEmail(emailIn.value) !== true) {
-      errorMsg.innerHTML = "please enter a valid email address";
+      errorMsg.innerHTML = "please enter a valid address";
     } else {
       if (messageIn.value.length < 10) {
         errorMsg.innerHTML = "please enter a valid message";
