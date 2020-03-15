@@ -117,6 +117,9 @@ a.middle-animation:hover:before {
   background-color: transparent;
   transition: ease-in-out 0.4s;
 }
+.navbar .icon {
+  display: none;
+}
 
 /* ------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------ */
@@ -692,4 +695,128 @@ input:focus {
 
 #contact-arrow {
   padding-right: 1.5vw;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* MOBILE CSS - PORTRAIT */
+@media screen and (max-width: 600px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+  }
+
+  .navbar {
+    position: fixed;
+    background-color: var(--light-bg);
+    border-bottom: 2px solid black;
+  }
+  .navbar .middle-animation:not(.nav-active) {
+    display: none;
+  }
+  .navbar li a {
+    font-size: 7vw;
+    padding: 3vw;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+  .navbar a.icon.active {
+    background-color: black;
+    color: white;
+    border: none;
+  }
+
+  /* home divs */
+  .home-1-grid {
+    height: 100vh;
+    display: block;
+  }
+  .home-1-grid div {
+    padding: 5vw;
+    padding-top: 15vh;
+  }
+  .home-1-grid p {
+    font-size: 10vw;
+  }
+  .home-1-image {
+    display: none;
+  }
+  .home-2-grid {
+    height: 100vh;
+    display: block;
+  }
+  .home-2-grid div {
+    padding: 5vw;
+    padding-top: 15vh;
+    text-align: right;
+  }
+  .home-2-grid p {
+    font-size: 10vw;
+  }
+  .home-2-image {
+    display: none;
+  }
+
+  /* my work divs */
+  #cheat-day-div {
+    grid-template-rows: 2fr 3fr;
+  }
+  .work-div-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "link" "desc";
+  }
+  .work-div {
+    padding: 5vh;
+    font-size: 2.5vh;
+  }
+  .work-description p {
+    margin: 0;
+  }
+  .home-3-container {
+    padding: 0;
+  }
+  #tab-app-div {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: "link" "desc";
+    font-size: 2.25vh;
+  }
+  .img-row img {
+    width: 19vh;
+  }
+  #left-img {
+    width: 19vh;
+  }
+  .work-img {
+    height: 20vh;
+    width: 40vh;
+  }
+  .lang-tags li {
+    font-size: 1.5vh;
+    margin-right: 0.5vh;
+  }
+  #work-div-last {
+    height: auto;
+  }
+  #react-div .desc-header {
+    padding-bottom: 4vh;
+  }
+  /* about me */
+  .about-2 {
+    display: none;
+  }
+
+  /* general */
+  .arrow a {
+    display: none;
+  }
 }
