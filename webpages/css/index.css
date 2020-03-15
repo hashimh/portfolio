@@ -471,7 +471,7 @@ a.middle-animation:hover:before {
 /* about 3 / contact */
 #about-3-title {
   font-size: 4vw;
-  margin-bottom: 1vw;
+  margin-bottom: 0vw;
 }
 .about-3 {
   height: 70vh;
@@ -498,6 +498,7 @@ a.middle-animation:hover:before {
 }
 .about-3-1-socials {
   text-align: center;
+  margin-top: 3vw;
 }
 .about-3-1-socials a {
   text-decoration: none;
@@ -580,7 +581,7 @@ a.fa:hover span {
     "name name"
     "email email"
     "message message"
-    "send error";
+    "error send";
 
   overflow-y: hidden;
 }
@@ -638,6 +639,7 @@ input:focus {
   border-radius: 3px;
   font-family: Raleway;
   transition: all 0.5s ease-in-out;
+  float: right;
 }
 .modalBox6 input:hover {
   cursor: pointer;
