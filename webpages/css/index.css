@@ -708,10 +708,7 @@ input:focus {
   /* @media screen and (max-width: 1024px) { */
   html,
   body {
-    overflow-x: hidden;
-  }
-  body {
-    position: relative;
+    max-width: 100% !important;
   }
 
   .navbar {
@@ -738,7 +735,7 @@ input:focus {
 
   /* home divs */
   .home-1-grid {
-    height: 100vh;
+    height: auto;
     display: block;
   }
   .home-1-grid div {
@@ -752,7 +749,7 @@ input:focus {
     display: none;
   }
   .home-2-grid {
-    height: 100vh;
+    height: auto;
     display: block;
   }
   .home-2-grid div {
@@ -776,7 +773,7 @@ input:focus {
     grid-template-areas: "link" "desc";
   }
   .work-div {
-    padding: 5vh;
+    padding: 2vh;
     font-size: 2.5vh;
   }
   .work-description p {
