@@ -72,7 +72,7 @@ html {
 .navbar li a {
   margin: 1.5vw 1.5vw;
   padding: 1vw 1vw;
-  font-size: 2.4vw;
+  font-size: 2.25vw;
   float: right;
   display: block;
   text-decoration: none;
@@ -478,6 +478,8 @@ a.middle-animation:hover:before {
 }
 .about-3 {
   height: 70vh;
+  padding-top: 5%;
+  padding-bottom: 2%;
 }
 .about-3-info {
   grid-area: contact;
@@ -521,16 +523,19 @@ a.middle-animation:hover:before {
 
 a.fa {
   position: relative;
+  transition: all 1s;
 }
+
 a.fa span {
   display: none;
   color: white;
 }
 a.fa:hover span {
+  color: var(--dark-bg);
   display: block;
   position: fixed;
   overflow: hidden;
-  font-size: 1.5vw;
+  font-size: 1.75vw;
   background-color: black;
   border-radius: 1vw;
   padding: 0 1vw 0 1vw;
