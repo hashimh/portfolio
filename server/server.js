@@ -20,7 +20,7 @@ app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "../webpages/" + "index.html"));
 });
 
-const PORT = process.env.PORT || 8082;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}!`);
 });
