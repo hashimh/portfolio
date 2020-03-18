@@ -19,6 +19,41 @@ function checkVisible(el) {
   );
 }
 
+// FUNCTION TO ALTER CLASSNAMES OF NAVBAR ELEMENTS FOR RESPONSIVENESS //
+function navFunction() {
+  console.log("entered navFunction");
+  let y = document.getElementsByClassName("middle-animation");
+  for (let i = 0; i < y.length; i++) {
+    if (y[i].classList.contains("middle-animation")) {
+      y[i].classList.add("no-animation");
+    } else {
+      y[i].classList.remove("no-animation");
+    }
+  }
+  let x = document.getElementById("navbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+
+// // FUNCTION TO CHANGE ACTIVE CLASS OF NAVAR
+// // Get the container element
+// var nav = document.getElementById("navbar");
+
+// // Get all buttons with class="btn" inside the container
+// var els = nav.getElementsByClassName("nav-link");
+
+// // Loop through the buttons and add the active class to the current/clicked button
+// for (let i = 0; i < els.length; i++) {
+//   els[i].addEventListener("click", function() {
+//     let current = document.getElementsByClassName("nav-active");
+//     current[0].className = current[0].className.replace(" nav-active", "");
+//     this.className += " nav-active";
+//   });
+// }
+
 let lightGlobal = "#ffe1a1";
 // Color change function
 function colorChange(col) {

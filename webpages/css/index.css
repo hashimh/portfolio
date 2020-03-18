@@ -66,8 +66,8 @@ html {
     opacity: 1;
   }
 }
-.navbar > li {
-  display: inline;
+.navbar li {
+  display: block;
 }
 .navbar li a {
   margin: 1.5vw 1.5vw;
@@ -86,7 +86,7 @@ a.middle-animation:before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 2.5px;
   bottom: 0;
   left: 0;
   background-color: black;
@@ -714,28 +714,39 @@ input:focus {
   html,
   body {
     max-width: 100% !important;
+    margin: 0;
   }
-
-  .navbar {
-    position: fixed;
-    background-color: var(--light-bg);
-    border-bottom: 2px solid black;
-  }
-  .navbar .middle-animation:not(.nav-active) {
+  .navbar li:not(:first-child) {
     display: none;
   }
-  .navbar li a {
-    font-size: 7vw;
-    padding: 3vw;
+  .navbar li.icon-li {
+    float: right;
+    display: block;
   }
   .navbar a.icon {
     float: right;
     display: block;
   }
-  .navbar a.icon.active {
-    background-color: black;
-    color: white;
-    border: none;
+  .navbar {
+    background-color: var(--light-bg);
+    border-bottom: 2px solid black;
+  }
+  .navbar li a {
+    font-size: 7vw;
+    padding: 3vw;
+  }
+  /* navbar .responsive code */
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive {
+    position: fixed;
+  }
+  .navbar.responsive li {
+    display: flex;
+    float: none;
   }
 
   /* home divs */
