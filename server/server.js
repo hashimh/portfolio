@@ -4,6 +4,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const nodemailer = require("nodemailer");
+const favicon = require("serve-favicon");
 require("dotenv").config();
 
 const webpagesPath = path.join(__dirname, "../webpages");
@@ -15,6 +16,7 @@ app.use("/", (req, res, next) => {
 });
 app.use("/", express.static(webpagesPath));
 app.use("/images", express.static(imagesPath));
+app.use(favicon(path.join(__dirname, "../images/favicon/" + "favicon.ico")));
 
 app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "../webpages/" + "index.html"));
