@@ -2,7 +2,7 @@
 FROM node:6
 
 # Clone the repo from github
-RUN git clone https://github.com/hashimh/portfolio
+RUN git clone https://github.com/hashimh/portfolio.git
 
 # Change workind directory to the cloned repo
 WORKDIR /portfolio
