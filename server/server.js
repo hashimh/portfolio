@@ -1,11 +1,11 @@
 "use strict";
 
+require("dotenv").config();
 const express = require("express");
 const app = express();
 const path = require("path");
 const nodemailer = require("nodemailer");
 const favicon = require("serve-favicon");
-require("dotenv").config();
 
 const webpagesPath = path.join(__dirname, "../webpages");
 const imagesPath = path.join(__dirname, "../images");
@@ -33,6 +33,7 @@ let GMAIL_PASS = process.env.GMAIL_PASS;
 app.post("/api/sendMail", sendMail);
 
 function sendMail(req, res) {
+  console.log(GMAIL_USER, GMAIL_PASS);
   let smtpTrans = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
