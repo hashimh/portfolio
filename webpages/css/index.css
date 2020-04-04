@@ -522,7 +522,7 @@ a.middle-animation:hover:before {
 }
 .about-3-1-socials {
   text-align: center;
-  margin-top: 3vw;
+  margin-top: 6vw;
 }
 .about-3-1-socials a {
   text-decoration: none;
@@ -670,7 +670,7 @@ input:focus {
 }
 .modalBox6 input:hover {
   cursor: pointer;
-  border: 2px solid black;
+  font-size: 1.5vw;
 }
 
 /* ------------------------------------------------------------------------------ */

@@ -81,7 +81,7 @@ function colorChange(col) {
   } else if (col == "color-pink") {
     dark = "#D991A2";
     light = "#FFD1DCef";
-    lightest = "#FFF7F9";
+    lightest = "#fdf0f2";
   }
 
   // now, get each element which needs background colour changed and change it, starting with dark -> light -> lightest
