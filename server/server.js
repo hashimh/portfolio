@@ -33,7 +33,6 @@ let GMAIL_PASS = process.env.GMAIL_PASS;
 app.post("/api/sendMail", sendMail);
 
 function sendMail(req, res) {
-  console.log(GMAIL_USER, GMAIL_PASS);
   let smtpTrans = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
