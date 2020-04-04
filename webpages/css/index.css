@@ -20,9 +20,6 @@ html {
 
 /* responsive background colours */
 :root {
-  /* darkest */
-  --darkest-bg: #f07d3f;
-
   /* dark */
   --dark-bg: #ed8a53;
 
@@ -419,6 +416,7 @@ a.middle-animation:hover:before {
   grid-area: about-img;
   padding-right: 2vw;
 }
+
 .about-1-img img {
   max-width: 100%;
   max-height: 100%;

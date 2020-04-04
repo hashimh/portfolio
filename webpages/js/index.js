@@ -5,12 +5,12 @@ function checkVisible(el) {
 
   const viewport = {
     top: scroll + 100,
-    bottom: scroll + window.innerHeight
+    bottom: scroll + window.innerHeight,
   };
 
   const bounds = {
     top: boundsTop,
-    bottom: boundsTop + el.clientHeight
+    bottom: boundsTop + el.clientHeight,
   };
 
   return (
@@ -67,31 +67,25 @@ function colorChange(col) {
 
   // first, determine which color has been clicked and assign variables accordingly
   if (col == "color-orange") {
-    darkest = "#fa742c";
     dark = "#ed8a53";
-    light = "#ffe1a1";
+    light = "#ffe1a1ef";
     lightest = "#fff4c7";
   } else if (col == "color-blue") {
-    darkest = "#0e789e";
     dark = "#759ba9";
-    light = "#aeb6cf";
+    light = "#aeb6cfef";
     lightest = "#f3f5f5";
   } else if (col == "color-purple") {
-    darkest = "#664c80";
-    dark = "#957dad";
-    light = "#d291bc";
-    lightest = "#e0bbe4";
+    dark = "#8066B3";
+    light = "#B19CD9ef";
+    lightest = "#E9DEFF";
   } else if (col == "color-pink") {
-    darkest = "#b15677";
-    dark = "#e18aaa";
-    light = "#e4a0b7";
-    lightest = "#ecbdc4";
+    dark = "#D991A2";
+    light = "#FFD1DCef";
+    lightest = "#FFF7F9";
   }
 
   // now, get each element which needs background colour changed and change it, starting with dark -> light -> lightest
   let root = document.documentElement;
-  // darkest
-  root.style.setProperty("--darkest-bg", darkest);
 
   // dark:
   document.getElementById("modal-cont").style.backgroundColor = dark;
@@ -124,7 +118,7 @@ function colorChange(col) {
 
 // navigation bar scroll - add background colour
 let navbar = document.getElementById("navbar");
-window.onscroll = function() {
+window.onscroll = function () {
   "use strict";
   if (!/Mobi/.test(this.navigator.userAgent) == true) {
     if (
@@ -143,18 +137,18 @@ window.onscroll = function() {
 };
 
 // function to animate the 2nd paragraph of home.html, when it comes into view
-let animateHTML = function() {
+let animateHTML = function () {
   let elem, windowHeight;
-  let init = function() {
+  let init = function () {
     elem = document.getElementsByClassName("home-2-anim");
     windowHeight = window.innerHeight;
     _addEventHandlers();
   };
 
-  let _addEventHandlers = function() {
+  let _addEventHandlers = function () {
     window.addEventListener("scroll", _checkPosition);
   };
-  let _checkPosition = function() {
+  let _checkPosition = function () {
     for (var i = 0; i < elem.length; i++) {
       var posFromTop = elem[i].getBoundingClientRect().top;
       if (posFromTop - windowHeight <= -500) {
@@ -166,7 +160,7 @@ let animateHTML = function() {
     }
   };
   return {
-    init: init
+    init: init,
   };
 };
 
@@ -248,7 +242,7 @@ function isName(name) {
 
 let tooltip = document.getElementsByClassName("tooltip");
 
-window.onmousemove = function(e) {
+window.onmousemove = function (e) {
   for (let i = 0; i < tooltip.length; i++) {
     let x = e.clientX,
       y = e.clientY;
@@ -283,7 +277,7 @@ async function sendBtnClicked() {
         errorMsg.innerHTML = "";
         const fetchOptions = {
           credentials: "same-origin",
-          method: "POST"
+          method: "POST",
         };
 
         let url =
@@ -314,7 +308,7 @@ async function sendBtnClicked() {
         }
         errorMsg.innerHTML = "your message has been sent :)";
 
-        setTimeout(function() {
+        setTimeout(function () {
           // Clear modal content and close modal
           errorMsg.innerHTML = "";
         }, 5000);
