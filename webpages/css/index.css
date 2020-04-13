@@ -727,6 +727,198 @@ input:focus {
 /* ------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------ */
+/* TABLET CSS - PORTRAIT */
+@media screen and (min-width: 768px) and (max-width: 1367px) {
+  html,
+  body {
+    max-width: 100vw !important;
+    margin: 0;
+  }
+  .arrow a {
+    display: none;
+  }
+
+  /* tablet navbar css */
+  .navbar {
+    background-color: var(--light-bg);
+    border-bottom: 2px solid black;
+  }
+  .navbar li a {
+    font-size: 4vw;
+  }
+
+  /* home sections */
+  .home-1 p,
+  .home-2 p {
+    font-size: 8vw;
+  }
+  .home-1-grid {
+    grid-template-columns: 2fr 1fr;
+    padding-top: 10vh;
+  }
+  .home-2-grid {
+    grid-template-columns: 1fr 2fr;
+  }
+  .home-2-image {
+    margin-top: 20vh;
+  }
+  .home-2-image div {
+    height: 10vh;
+  }
+
+  /* work sections */
+  .home-3-container {
+    margin: 0;
+    padding: 0;
+  }
+  .home-3-container > * {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .work-div-grid {
+    height: 100vh;
+    padding-top: 0;
+    margin-top: 0;
+    grid-template-columns: 1fr;
+    grid-template-areas: "desc" "link";
+  }
+  #tab-app-div {
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-areas: "desc" "link";
+  }
+  #portfolio-app-div {
+    padding-top: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-areas: "desc" "link";
+  }
+  #react-div {
+    height: 100vh;
+    padding-top: 30vh;
+    margin-top: 0;
+  }
+
+  .work-link {
+    padding-top: 5vw;
+  }
+  .work-img {
+    height: 30vw;
+    width: 60vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .react-img {
+    height: 30vw;
+    width: 30vw;
+  }
+  .work-div {
+    font-size: 3vh;
+    width: 90vw;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+  }
+  .work-description > p {
+    padding: 0;
+    margin: 0;
+  }
+  #tab-app-div p {
+    padding: 0;
+    margin: 0;
+  }
+  .work-description {
+    width: 85vw;
+  }
+  .desc-header {
+    text-align: left;
+  }
+  .lang-tags {
+    padding-left: 10vw;
+  }
+  .lang-tags li {
+    font-size: 3vw;
+  }
+
+  /* about me css */
+  #about-div {
+    padding-top: 120vh;
+  }
+  #about-1-title {
+    font-size: 6vh;
+    text-align: center;
+  }
+  .about-1 {
+    height: auto;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "about-img" "about-text";
+  }
+  .about-1-text {
+    padding-top: 3vh;
+  }
+  .about-1-text p {
+    font-size: 2.5vh;
+  }
+  .about-1-img {
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
+
+  #about-3-title {
+    font-size: 5vh;
+    text-align: center;
+  }
+  .about-3 {
+    height: 110%;
+    text-align: center;
+  }
+  .about-3-info {
+    font-size: 2.5vh;
+  }
+  .about-3-1-socials a {
+    padding: 2vh;
+    font-size: 1em;
+  }
+  .about-3-grid {
+    grid-template-areas: "contact" "email";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.75fr 1fr;
+  }
+  .modalContent {
+    height: 40vh;
+    width: auto;
+    margin: 0;
+    margin-top: 5vh;
+    grid-template-rows: 1fr 1fr 4fr 1fr;
+  }
+  .modalContent input {
+    font-size: 2.5vh;
+  }
+  .modalContent textarea {
+    font-size: 2.5vh;
+  }
+  .modalBox6 input {
+    width: auto;
+  }
+  .emailModalInput {
+    padding: 1vh;
+  }
+  .modalBox6 {
+    padding-right: 1vh;
+  }
+  #errorMsgDiv p {
+    font-size: 2vh;
+  }
+}
+
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
 /* MOBILE CSS - PORTRAIT */
 @media screen and (max-width: 600px) {
   /* @media screen and (max-width: 1024px) { */
@@ -805,11 +997,19 @@ input:focus {
   }
   .work-div-grid {
     grid-template-columns: 1fr;
-    grid-template-areas: "link" "desc";
+    grid-template-areas: "desc" "link";
   }
   .work-div {
     padding: 2vh;
     font-size: 2.5vh;
+  }
+  .work-link {
+    padding-top: 5vh;
+    text-align: center;
+  }
+  .lang-tags {
+    padding: 0;
+    margin-left: 1.1vh;
   }
   .work-description p {
     margin: 0;
@@ -820,8 +1020,19 @@ input:focus {
   #tab-app-div {
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
-    grid-template-areas: "link" "desc";
+    grid-template-areas: "desc" "link";
     font-size: 2.25vh;
+  }
+
+  #portfolio-app-div {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: "desc" "link";
+    font-size: 2.25vh;
+  }
+
+  #react-div {
+    padding-top: 50vh;
   }
 
   .img-row img {
@@ -847,8 +1058,13 @@ input:focus {
     padding-bottom: 4vh;
   }
   /* about me */
+  .home-4 {
+    padding-top: 20vh;
+  }
+
   #about-1-title {
     font-size: 6vh;
+    text-align: center;
   }
   .about-1 {
     height: auto;
@@ -856,17 +1072,19 @@ input:focus {
     grid-template-rows: 1fr 2fr;
     grid-template-areas: "about-img" "about-text";
   }
+  .about-1-text {
+    padding-top: 3vh;
+  }
   .about-1-text p {
     font-size: 2.5vh;
   }
-  .about-2 {
-    display: none;
-  }
+
   #about-3-title {
-    font-size: 6vh;
+    font-size: 5vh;
+    text-align: center;
   }
   .about-3 {
-    height: 100vh;
+    height: 110%;
     padding-top: 10vh;
   }
   .about-3-info {
