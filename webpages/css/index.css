@@ -813,6 +813,11 @@ input:focus {
     height: 30vw;
     width: 30vw;
   }
+  .img-row {
+    margin-left: 14vw;
+    margin-right: 14vw;
+    text-align: center;
+  }
   .work-div {
     font-size: 3vh;
     width: 90vw;
