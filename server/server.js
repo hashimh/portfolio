@@ -1,6 +1,5 @@
 "use strict";
 
-require("dotenv").config();
 const express = require("express");
 const app = express();
 const path = require("path");
@@ -18,7 +17,7 @@ app.use("/", express.static(webpagesPath));
 app.use("/images", express.static(imagesPath));
 app.use(favicon(path.join(__dirname, "../images/favicon/" + "favicon.ico")));
 
-app.get("/", function(req, res) {
+app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "../webpages/" + "index.html"));
 });
 
@@ -39,8 +38,8 @@ function sendMail(req, res) {
     secure: true,
     auth: {
       user: GMAIL_USER,
-      pass: GMAIL_PASS
-    }
+      pass: GMAIL_PASS,
+    },
   });
 
   let mailOpts = {
@@ -53,7 +52,7 @@ function sendMail(req, res) {
       ", via " +
       req.query.email +
       ":\n\n" +
-      req.query.message
+      req.query.message,
   };
 
   smtpTrans.sendMail(mailOpts, (error, response) => {
