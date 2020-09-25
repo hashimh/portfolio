@@ -684,7 +684,7 @@ input:focus {
   font-size: 1vw;
   padding-right: 5vw;
   animation-name: slide;
-  animation-delay: 1.5s;
+  animation-delay: 2s;
   animation-duration: 2s;
   animation-timing-function: ease;
   animation-iteration-count: 1;
