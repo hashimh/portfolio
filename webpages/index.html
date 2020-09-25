@@ -378,7 +378,7 @@
                             <textarea
                               id="mailMessage"
                               name="mailMessage"
-                              placeholder="type your message here..."
+                              placeholder="your message..."
                               onchange="inputValidate(this.value, 1, 'mailMessage')"
                               class="modal-entry"
 
@@ -386,14 +386,13 @@
                           </div>
 
                           <div class="modalBox6">
-                            <input
+                            <a
                               id="sendMessage"
-                              type="button"
                               name="sendBtn"
                               value="send"
                               onclick="sendBtnClicked()"
-                              class="modal-entry"
-                            />
+                              class="modal-entry middle-animation"
+                            >send</a>
                           </div>
 
                           <div class="modalBox7" id="errorMsgDiv">

@@ -590,9 +590,8 @@ a.fa:hover span {
 }
 
 #errorMsg {
-  font-size: 1.5vw;
-  text-align: center;
-  margin: 1vw;
+  font-size: 2vw;
+  margin: 0;
 }
 
 .modalContent {
@@ -657,22 +656,21 @@ input:focus {
   outline: none;
 }
 
-.modalBox6 input {
+.modalBox6 a {
   border: none;
   color: black;
-  background-color: var(--lightest-bg);
-  font-size: 0.75vw;
-  padding: 1vw;
-  width: 9vw;
+  background-color: inherit;
+  font-size: 2vw !important;
+  padding: 0;
+  width: auto;
   font-size: 20px;
   border-radius: 3px;
   font-family: Raleway;
-  transition: all 0.5s ease-in-out;
   float: right;
 }
-.modalBox6 input:hover {
+.modalBox6 a:hover {
   cursor: pointer;
-  font-size: 1.5vw;
+  /* font-size: 1.5vw; */
 }
 
 /* ------------------------------------------------------------------------------ */
