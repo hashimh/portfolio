@@ -185,6 +185,7 @@ a.middle-animation:hover:before {
 .home-2-grid p {
   font-size: 4vw;
   line-height: 1.5;
+  margin-top: 16vh;
 }
 .para-fade-in {
   animation: fade-in 1.5s;
@@ -214,9 +215,9 @@ a.middle-animation:hover:before {
   padding: 3.5vw;
 }
 
-.color-div-active {
+/* .color-div-active {
   border: 2px solid black;
-}
+} */
 .home-2-image {
   padding-left: 5vw;
   margin-top: 9vw;
@@ -294,8 +295,8 @@ a.middle-animation:hover:before {
   width: 40vw;
   box-shadow: 5px 5px 10px black;
   transition: all 0.5s ease;
-  filter: grayscale(100%);
-  opacity: 0.5;
+  filter: grayscale(50%);
+  opacity: 0.75;
 }
 .work-img:hover {
   filter: grayscale(0%);
@@ -330,7 +331,7 @@ a.middle-animation:hover:before {
   margin-right: 2vh;
   margin-bottom: 2vh;
   padding: 0.75vw;
-  font-size: 1.25vw;
+  font-size: 1.1vw;
   border: 2px solid #ed8a53;
   background-color: #ed8a53;
   border-radius: 1vh;
@@ -388,7 +389,7 @@ a.middle-animation:hover:before {
 
 .desc-header {
   padding-bottom: 2vh;
-  border-bottom: 2px solid black;
+  border-bottom: 4px solid black;
   font-style: italic;
 }
 
@@ -682,7 +683,7 @@ input:focus {
   text-align: center;
   float: right;
   font-size: 1vw;
-  padding-right: 5vw;
+  padding-right: 2vw;
   animation-name: slide;
   animation-delay: 2s;
   animation-duration: 2s;
