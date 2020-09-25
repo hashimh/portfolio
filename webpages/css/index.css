@@ -678,10 +678,17 @@ input:focus {
 /* ------------------------------------------------------------------------------ */
 /* arrow css code */
 .arrow {
+  opacity: 0;
   text-align: center;
-  width: auto;
   float: right;
   font-size: 1vw;
+  padding-right: 5vw;
+  animation-name: slide;
+  animation-delay: 1.5s;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 .arrow-a {
   color: black;
@@ -695,17 +702,6 @@ input:focus {
   cursor: pointer;
   background-color: var(--dark-bg);
   border-radius: 100%;
-}
-
-#home-1-arrow {
-  opacity: 0;
-  animation-name: slide;
-  animation-delay: 2s;
-  animation-duration: 2s;
-  animation-timing-function: ease;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  transform: translate(0, -20px);
 }
 
 /* ------------------------------------------------------------------------------ */
