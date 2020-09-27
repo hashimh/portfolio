@@ -38,24 +38,8 @@ function navFunction() {
   }
 }
 
-// // FUNCTION TO CHANGE ACTIVE CLASS OF NAVAR
-// // Get the container element
-// var nav = document.getElementById("navbar");
-
-// // Get all buttons with class="btn" inside the container
-// var els = nav.getElementsByClassName("nav-link");
-
-// // Loop through the buttons and add the active class to the current/clicked button
-// for (let i = 0; i < els.length; i++) {
-//   els[i].addEventListener("click", function() {
-//     let current = document.getElementsByClassName("nav-active");
-//     current[0].className = current[0].className.replace(" nav-active", "");
-//     this.className += " nav-active";
-//   });
-// }
-
+// FUNCTION WHEN COLOUR BOX IS CLICKED
 let lightGlobal = "#ffe1a1";
-// Color change function
 function colorChange(col) {
   let darkest, dark, light, lightest;
   // make current color active
@@ -116,7 +100,7 @@ function colorChange(col) {
   lightGlobal = light;
 }
 
-// navigation bar scroll - add background colour
+// WHEN SCROLLED DOWN, CHANGE NAV BAR APPEARANCE
 let navbar = document.getElementById("navbar");
 window.onscroll = function () {
   "use strict";
@@ -136,7 +120,7 @@ window.onscroll = function () {
   }
 };
 
-// function to animate the 2nd paragraph of home.html, when it comes into view
+// SECOND PARAGRAPH VIEW ANIMATION
 let animateHTML = function () {
   let elem, windowHeight;
   let init = function () {
@@ -166,13 +150,13 @@ let animateHTML = function () {
 
 animateHTML().init();
 
-// Function to handle scroll down events
+// FUNCTION TO HANDLE DOWN ARROW SCROLL EVENT
 function scrollDown(id) {
   let div = document.getElementById(id);
   div.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
-// Modal code
+// MODAL FUNCTIONS
 function emailValidate(email) {
   // validate email
   let emailIn = document.getElementById("userEmail");
@@ -251,12 +235,8 @@ window.onmousemove = function (e) {
   }
 };
 
-// Function to handle send button click
+// HANDLE SEND BUTTON CLICK
 async function sendBtnClicked() {
-  // First, if things are empty, output an error message in #errorMsg
-  // Then, check content of subject is > 1, and message length > 1.
-  // Then, check the RECAPTCHA has authorised the user.
-  // Save all 4 input fields into variables to be sent to a server.js function
   let nameIn = document.getElementById("userName");
   let emailIn = document.getElementById("userEmail");
   let messageIn = document.getElementById("mailMessage");

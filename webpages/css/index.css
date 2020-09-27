@@ -498,7 +498,7 @@ a.middle-animation:hover:before {
   margin-bottom: 0vw;
 }
 .about-3 {
-  height: 70vh;
+  height: 85vh;
   padding-top: 5%;
   padding-bottom: 2%;
 }
@@ -661,7 +661,7 @@ input:focus {
   color: black;
   background-color: inherit;
   font-size: 2vw !important;
-  padding: 0;
+  margin: 0.5vw 0 0.5vw 0;
   width: auto;
   font-size: 20px;
   border-radius: 3px;
