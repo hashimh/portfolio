@@ -92,6 +92,9 @@ function colorChange(col) {
     modalInputs[i].style.backgroundColor = light;
     modalInputs[i].style.border = "2px solid " + light;
   }
+  // send button differs from rest:
+  document.getElementById("sendMessage").style.backgroundColor = dark;
+  document.getElementById("sendMessage").style.border = "2px solid" + dark;
 
   // lightest
   document.body.style.backgroundColor = lightest;
