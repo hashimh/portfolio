@@ -750,7 +750,7 @@ input:focus {
 
   /* work sections */
   .home-3-container {
-    margin: 0;
+    margin: auto;
     padding: 0;
   }
   .home-3-container > * {
@@ -775,6 +775,9 @@ input:focus {
     padding-top: 100vh;
     grid-template-columns: 1fr;
     grid-template-areas: "desc" "link";
+  }
+  #portfolio-app-div p {
+    margin-right: 0;
   }
   #react-div {
     height: 100vh;
@@ -887,8 +890,9 @@ input:focus {
   .modalContent textarea {
     font-size: 2.5vh;
   }
-  .modalBox6 input {
+  .modalBox6 a {
     width: auto;
+    font-size: 2.5vh !important;
   }
   .emailModalInput {
     padding: 1vh;
@@ -1104,8 +1108,9 @@ input:focus {
   .modalContent textarea {
     font-size: 2.5vh;
   }
-  .modalBox6 input {
+  .modalBox6 a {
     width: auto;
+    font-size: 2vh !important;
   }
   .emailModalInput {
     padding: 1vh;
