@@ -1054,6 +1054,7 @@ input:focus {
   #about-1-title {
     font-size: 5vh;
     margin-top: 0;
+    margin-bottom: 2vh;
   }
   #about-1-img {
     display: none;
@@ -1074,6 +1075,7 @@ input:focus {
 
   #about-3-title {
     font-size: 5vh;
+    margin-bottom: 2vh;
   }
   .about-3 {
     height: 110%;
