@@ -954,12 +954,12 @@ input:focus {
 
   /* home divs */
   .home-1-grid {
-    height: auto;
+    height: 100vh;
     display: block;
   }
   .home-1-grid div {
     padding: 5vw;
-    padding-top: 15vh;
+    padding-top: 25vh;
   }
   .home-1-grid p {
     font-size: 10vw;
@@ -967,17 +967,20 @@ input:focus {
   .home-1-image {
     display: none;
   }
+  .home-2 {
+    height: 75vh;
+  }
   .home-2-grid {
-    height: auto;
+    height: 75vh;
     display: block;
   }
   .home-2-grid div {
     padding: 5vw;
-    padding-top: 15vh;
     text-align: right;
   }
   .home-2-grid p {
     font-size: 10vw;
+    margin-top: 0;
   }
   .home-2-image {
     display: none;
