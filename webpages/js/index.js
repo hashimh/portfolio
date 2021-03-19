@@ -1,3 +1,13 @@
+// EDIT CLASSLISTS FOR MOBILE DEVICES
+window.addEventListener("load", (event) => {
+  let para2 = document.getElementById("para-2");
+  if (window.innerWidth < 600) {
+    if (para2.classlist.contains("para-hidden")) {
+      para2.classList.remove("para-hidden");
+    }
+  }
+});
+
 // FUNCTIONS TO CHECK IF AN ELEMENT IS IN VIEW
 function checkVisible(el) {
   const scroll = window.scrollY || window.pageYOffset;
