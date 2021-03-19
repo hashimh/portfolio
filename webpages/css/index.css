@@ -752,6 +752,7 @@ input:focus {
   .home-3-container {
     margin: auto;
     padding: 0;
+    width: 100vw;
   }
   .home-3-container > * {
     margin: 0;
@@ -996,7 +997,7 @@ input:focus {
   }
   .work-div {
     padding: 2vh;
-    font-size: 2.5vh;
+    font-size: 2.25vh;
   }
   .work-link {
     padding-top: 5vh;
@@ -1011,8 +1012,11 @@ input:focus {
   }
   .home-3-container {
     padding: 0;
+    width: 100vw;
   }
   #tab-app-div {
+    padding-top: 0vh;
+    margin-top: -10vh;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
     grid-template-areas: "desc" "link";
@@ -1020,14 +1024,11 @@ input:focus {
   }
 
   #portfolio-app-div {
+    padding-top: 10vh;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
     grid-template-areas: "desc" "link";
     font-size: 2.25vh;
-  }
-
-  #react-div {
-    padding-top: 50vh;
   }
 
   .img-row img {
@@ -1047,25 +1048,25 @@ input:focus {
 
   #work-div-last {
     height: auto;
-    font-size: 2.25vh;
   }
   #react-div .desc-header {
     padding-bottom: 4vh;
   }
   /* about me */
-  .home-4 {
-    padding-top: 20vh;
-  }
 
   #about-1-title {
-    font-size: 6vh;
-    text-align: center;
+    font-size: 5vh;
+    margin-top: 0;
+  }
+  #about-1-img {
+    display: none;
   }
   .about-1 {
     height: auto;
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
-    grid-template-areas: "about-img" "about-text";
+    grid-template-areas: "about-img" "about-text"; */
+    display: block;
   }
   .about-1-text {
     padding-top: 3vh;
