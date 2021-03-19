@@ -988,9 +988,6 @@ input:focus {
   }
 
   /* my work divs */
-  #cheat-day-div {
-    grid-template-rows: 2fr 3fr;
-  }
   .work-div-grid {
     grid-template-columns: 1fr;
     grid-template-areas: "desc" "link";
@@ -998,6 +995,7 @@ input:focus {
   .work-div {
     padding: 2vh;
     font-size: 2.25vh;
+    height: auto;
   }
   .work-link {
     padding-top: 5vh;
@@ -1016,7 +1014,7 @@ input:focus {
   }
   #tab-app-div {
     padding-top: 0vh;
-    margin-top: -10vh;
+    margin-top: 0vh;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
     grid-template-areas: "desc" "link";
@@ -1024,7 +1022,8 @@ input:focus {
   }
 
   #portfolio-app-div {
-    padding-top: 10vh;
+    padding-top: 0vh;
+    margin-top: 0vh;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
     grid-template-areas: "desc" "link";
@@ -1049,9 +1048,7 @@ input:focus {
   #work-div-last {
     height: auto;
   }
-  #react-div .desc-header {
-    padding-bottom: 4vh;
-  }
+
   /* about me */
 
   #about-1-title {
@@ -1077,7 +1074,6 @@ input:focus {
 
   #about-3-title {
     font-size: 5vh;
-    text-align: center;
   }
   .about-3 {
     height: 110%;
