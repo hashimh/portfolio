@@ -598,7 +598,7 @@ a.fa:hover span {
   height: 28.5vw;
   width: 40vw;
   display: grid;
-  background-color: #ed8a53f3;
+  background-color: var(--dark-bg);
   padding: 1.5vw;
   margin: 1.5vw;
   margin-left: 4vw;
