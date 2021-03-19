@@ -1,10 +1,11 @@
-// EDIT CLASSLISTS FOR MOBILE DEVICES
+// ANIMATE SECOND PARA FOR DESKTOP/TABLET ONLY
 window.addEventListener("load", (event) => {
-  let para2 = document.getElementById("para-2");
   if (window.innerWidth < 600) {
-    if (para2.classlist.contains("para-hidden")) {
-      para2.classList.remove("para-hidden");
-    }
+    let para2 = document.getElementById("para-2");
+    para2.classList.remove("para-hidden");
+  }
+  if (window.innerWidth > 600) {
+    animateHTML().init();
   }
 });
 
@@ -160,8 +161,6 @@ let animateHTML = function () {
     init: init,
   };
 };
-
-animateHTML().init();
 
 // FUNCTION TO HANDLE DOWN ARROW SCROLL EVENT
 function scrollDown(id) {
