@@ -64,7 +64,7 @@ html {
   }
 }
 .navbar li {
-  display: block;
+  display: inline-block;
 }
 .navbar li a {
   margin: 1vw 1vw;
@@ -104,6 +104,7 @@ a.middle-animation:hover:before {
   float: left;
   display: block;
   font-size: 2.4vw;
+  margin-right: 45.75%;
 }
 .navbar-colour {
   background-color: var(--light-bg);
@@ -920,6 +921,7 @@ input:focus {
     max-width: 100% !important;
     margin: 0;
   }
+  /* MOBILE NAVBAR CSS */
   .navbar li:not(:first-child) {
     display: none;
   }
@@ -934,6 +936,12 @@ input:focus {
   .navbar {
     background-color: var(--light-bg);
     border-bottom: 2px solid black;
+  }
+  .navbar li {
+    display: block;
+  }
+  .navheader {
+    margin-right: 0;
   }
   .navbar li a {
     font-size: 7vw;
