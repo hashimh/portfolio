@@ -729,6 +729,9 @@ input:focus {
   .navbar li a {
     font-size: 4vw;
   }
+  .navheader {
+    margin-right: 16%;
+  }
 
   /* home sections */
   .home-1 p,
