@@ -7,6 +7,11 @@ window.addEventListener("load", (event) => {
   if (window.innerWidth > 600) {
     animateHTML().init();
   }
+
+  // check if device is tablet, remove colour changing section
+  if (/ipad|tablet/.test(this.navigator.userAgent) == true) {
+    console.log("tablet");
+  }
 });
 
 // FUNCTIONS TO CHECK IF AN ELEMENT IS IN VIEW
@@ -130,7 +135,8 @@ window.onscroll = function () {
       navbar.classList.remove("navbar-colour");
     }
   } else {
-    console.log("mob");
+    // console.log("mob");
+    document.getElementById("colour-picker").style.display = "none";
   }
 };
 

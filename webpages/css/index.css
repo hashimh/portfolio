@@ -948,16 +948,29 @@ input:focus {
     height: 90vh;
   }
   .home-1-grid div {
-    padding-top: 25vh;
+    padding-top: 20vh;
   }
   .home-1-grid p {
     font-size: 7vh;
   }
   .home-2 {
-    height: 55em;
+    height: 75vh;
+  }
+  .home-2-grid {
+    grid-template-columns: 2fr 3fr;
   }
   .home-2-grid div {
-    padding-top: 25%;
+    padding-top: 0;
+  }
+  .home-2-image {
+    margin-top: 5vh;
+  }
+  .home-2-grid p {
+    font-size: 7vh;
+    margin-top: 8vh;
+  }
+  .home-2-image div {
+    padding-top: 10vh;
   }
   .arrow {
     display: none;
@@ -966,6 +979,9 @@ input:focus {
   /* home 2 (work divs) */
   .home-3-container {
     padding: 1vh;
+  }
+  .home-4 {
+    padding: 5vh 6vh 5vh 6vh;
   }
 
   /* about div */
