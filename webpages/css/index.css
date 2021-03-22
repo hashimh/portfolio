@@ -737,14 +737,27 @@ input:focus {
   /* home sections */
   .home-1 p,
   .home-2 p {
-    font-size: 6vw;
+    font-size: 7vw;
   }
   .home-1-grid {
     grid-template-columns: 2fr 1fr;
     padding-top: 10vh;
   }
+  .home-1-grid div {
+    padding-top: 30%;
+  }
+
+  .home-2 {
+    height: 75vh;
+  }
   .home-2-grid {
     grid-template-columns: 1fr 2fr;
+  }
+  .home-2-grid div {
+    padding-top: 0;
+  }
+  .home-2-grid div p {
+    margin-top: 0;
   }
   .home-2-image {
     margin-top: 20vh;
@@ -754,6 +767,12 @@ input:focus {
   }
 
   /* work sections */
+  .work-div {
+    height: auto;
+  }
+  .work-link {
+    padding-bottom: 10vh;
+  }
   .home-3-container {
     margin: auto;
     padding: 0;
@@ -765,20 +784,20 @@ input:focus {
     text-align: center;
   }
   .work-div-grid {
-    height: 100vh;
     padding-top: 0;
     margin-top: 0;
     grid-template-columns: 1fr;
     grid-template-areas: "desc" "link";
   }
   #tab-app-div {
-    padding-top: 30vh;
-    height: 100vh;
+    padding-top: 0vh;
+    margin-top: 0vh;
     grid-template-columns: 1fr;
     grid-template-areas: "desc" "link";
   }
   #portfolio-app-div {
-    padding-top: 100vh;
+    padding-top: 0;
+    margin-top: 0;
     grid-template-columns: 1fr;
     grid-template-areas: "desc" "link";
   }
@@ -786,9 +805,11 @@ input:focus {
     margin-right: 0;
   }
   #react-div {
-    height: 100vh;
-    padding-top: 30vh;
+    padding-top: 0;
     margin-top: 0;
+  }
+  #work-div-last {
+    height: auto;
   }
 
   .work-link {
@@ -838,19 +859,22 @@ input:focus {
   }
 
   /* about me css */
-  #about-div {
-    padding-top: 120vh;
-  }
+
   #about-1-title {
     font-size: 6vh;
     text-align: center;
+    margin: 0;
+  }
+  .about-1-img {
+    display: none;
   }
   .about-1 {
     height: auto;
     text-align: center;
-    grid-template-columns: 1fr;
+    display: block;
+    /* grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
-    grid-template-areas: "about-img" "about-text";
+    grid-template-areas: "about-img" "about-text"; */
   }
   .about-1-text {
     padding-top: 3vh;
