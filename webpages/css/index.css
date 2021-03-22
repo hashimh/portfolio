@@ -275,7 +275,11 @@ a.middle-animation:hover:before {
 .work-div {
   padding: 5vh;
   font-size: 1.5vw;
-  height: 100vh;
+  height: auto;
+  padding-bottom: 10vw;
+}
+#work-div-last {
+  padding-bottom: 0;
 }
 
 .work-div-grid {
@@ -344,15 +348,10 @@ a.middle-animation:hover:before {
   margin-top: -30vh;
 }
 
-#work-div-last {
-  height: 60vh;
-  /* set this height, may change ----------------------------------- */
-}
-
 /* code to swap position for tab app work */
 #tab-app-div {
-  padding-top: 25vh;
-  margin-top: -25vh;
+  /* padding-top: 25vh;
+  margin-top: -25vh; */
   grid-template-areas: "desc link";
   grid-template-columns: 2fr 1fr;
 }
@@ -363,7 +362,7 @@ a.middle-animation:hover:before {
 }
 
 #portfolio-app-div {
-  padding-top: 25vh;
+  /* padding-top: 25vh; */
   grid-template-columns: 2fr 1fr;
   grid-template-areas: "desc link";
 }
