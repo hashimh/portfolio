@@ -944,11 +944,11 @@ input:focus {
 
   /* home 1 paragraphs */
   .home-1-grid {
-    grid-template-columns: 2.5fr 1fr;
+    grid-template-columns: 3fr 2fr;
     height: 90vh;
   }
   .home-1-grid div {
-    padding-top: 27vh;
+    padding-top: 25vh;
   }
   .home-1-grid p {
     font-size: 7vh;
