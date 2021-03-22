@@ -343,15 +343,9 @@ a.middle-animation:hover:before {
   border-radius: 1vh;
   font-weight: bold;
 }
-#react-div {
-  padding-top: 30vh;
-  margin-top: -30vh;
-}
 
 /* code to swap position for tab app work */
 #tab-app-div {
-  /* padding-top: 25vh;
-  margin-top: -25vh; */
   grid-template-areas: "desc link";
   grid-template-columns: 2fr 1fr;
 }
