@@ -240,6 +240,63 @@ a.middle-animation:hover:before {
 /* ------------------------------------------------------------------------------ */
 /* home 3 div css - my work */
 
+.cheat-day-gallery {
+  background-image: url("../../images/cheat-day/1.png");
+  background-size: cover;
+  margin: 0 auto !important;
+}
+.cheat-day-gallery:hover {
+  cursor: pointer;
+}
+
+.img-span {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+.img-span p {
+  font-size: 3vw;
+}
+.img-span p:hover {
+  cursor: pointer;
+}
+.img-left {
+  float: left;
+}
+.img-right {
+  float: right;
+  flex-direction: row-reverse;
+}
+
+.img-left p {
+  float: left;
+  margin-left: 10%;
+}
+
+.img-right p {
+  float: right;
+  margin-right: 10%;
+}
+
+.img-left:hover {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.2) 33%,
+    rgba(0, 0, 0, 0) 94%
+  );
+  border-radius: 1vh;
+}
+
+.img-right:hover {
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.2) 33%,
+    rgba(0, 0, 0, 0) 94%
+  );
+  border-radius: 1vh;
+}
+
 #cheat-day-div {
   grid-area: cheat-day;
 }

@@ -314,3 +314,25 @@ async function sendBtnClicked() {
     }
   }
 }
+
+// cheat day image switching
+let curImg = 1;
+let imgDiv = document.getElementById("img-div");
+function prevImg() {
+  if (curImg > 1) {
+    curImg = curImg - 1;
+  } else {
+    curImg = 7;
+  }
+  imgDiv.style.backgroundImage =
+    "url('../../images/cheat-day/" + curImg + ".png')";
+}
+function nextImg() {
+  if (curImg == 7) {
+    curImg = 1;
+  } else {
+    curImg += 1;
+  }
+  imgDiv.style.backgroundImage =
+    "url('../../images/cheat-day/" + curImg + ".png')";
+}
