@@ -40,6 +40,9 @@ function sendMail(req, res) {
       user: GMAIL_USER,
       pass: GMAIL_PASS,
     },
+    tls: {
+      rejectUnauthorized: false,
+    },
   });
 
   let mailOpts = {
