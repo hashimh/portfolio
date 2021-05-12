@@ -57,7 +57,7 @@ function sendMail(req, res) {
 
   smtpTrans.sendMail(mailOpts, (error, response) => {
     if (error) {
-      res.status(400).send("email not sent");
+      res.status(400).send("email not sent" + error);
     } else {
       res.status(200).send("email sent");
     }
