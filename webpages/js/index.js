@@ -293,7 +293,7 @@ async function sendBtnClicked() {
           console.log("Fetch response for /api/sendMail has failed.");
           return;
         } else {
-          console.log("Successful /api/sendMail call.");
+          console.log("Successful /api/sendMail call.", response);
           nameIn.value = "";
           emailIn.value = "";
           messageIn.value = "";
